@@ -10,6 +10,58 @@
   "willhaben:Nintendo Konsolen:nintendo konsole",
   "willhaben:Nintendo Switch:nintendo switch"
  ],
+ "listings": [
+  {
+   "extra": "Wien, 10. Bezirk, Favoriten",
+   "found_at": "2026-11-10T08:44:21+00:00",
+   "id": "1617406838",
+   "platform": "willhaben",
+   "price": 19.99,
+   "search": "Nintendo Switch",
+   "title": "Nintendo Switch Spiele 1. Generation",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-spiele-1-generation-1617406838/"
+  },
+  {
+   "extra": "Wien, 10. Bezirk, Favoriten",
+   "found_at": "2026-11-10T08:44:21+00:00",
+   "id": "1634889908",
+   "platform": "willhaben",
+   "price": 19.99,
+   "search": "Nintendo Switch",
+   "title": "Nintendo Switch Spiele 1. Generation",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-spiele-1-generation-1634889908/"
+  },
+  {
+   "extra": "Wien, 10. Bezirk, Favoriten",
+   "found_at": "2026-11-10T08:44:21+00:00",
+   "id": "1124446487",
+   "platform": "willhaben",
+   "price": 19.99,
+   "search": "Nintendo Switch",
+   "title": "Nintendo switch Spiele 1. Generation",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-spiele-1-generation-1124446487/"
+  },
+  {
+   "extra": "Salzburg",
+   "found_at": "2026-11-10T08:44:21+00:00",
+   "id": "1707618606",
+   "platform": "willhaben",
+   "price": 369.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo Switch set",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-set-1707618606/"
+  },
+  {
+   "extra": "Anderlfabrik",
+   "found_at": "2026-11-10T08:44:21+00:00",
+   "id": "1718341391",
+   "platform": "willhaben",
+   "price": 200.0,
+   "search": "Nintendo Switch",
+   "title": "NintendoSwitch OLED",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendoswitch-oled-1718341391/"
+  }
+ ],
  "seen": {
   "vinted:Game Boy": [],
   "vinted:Nintendo Konsolen": [],
@@ -210,7 +262,9 @@
    "1470475274",
    "1105981521",
    "1236792524",
-   "1708007505"
+   "1708007505",
+   "1339605019",
+   "1124565568"
   ],
   "willhaben:Nintendo Konsolen": [
    "1626269991",
@@ -283,7 +337,8 @@
    "1649576500",
    "1789594525",
    "1262167442",
-   "893396107"
+   "893396107",
+   "1718341391"
   ],
   "willhaben:Nintendo Switch": [
    "1019760549",
@@ -361,7 +416,12 @@
    "1793517342",
    "1357808322",
    "2019826126",
-   "2053966911"
+   "2053966911",
+   "1617406838",
+   "1634889908",
+   "1124446487",
+   "1707618606",
+   "1718341391"
   ]
  }
 }
