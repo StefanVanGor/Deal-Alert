@@ -326,6 +326,10 @@ function searchCard(s) {
   const card = h("div", { class: "panel search-card" },
     field("Name der Suche", "name", s.name, "z. B. Game Boy"),
     field("Suchbegriffe (mit Komma trennen)", "keywords", (s.keywords || []).join(", "), "game boy, gameboy"),
+    h("div", {}, h("label", {}, "Willhaben-Kategorie"),
+      h("select", { "data-f": "category_path" },
+        h("option", { value: "", selected: !s.category_path }, "Alle Kategorien"),
+        h("option", { value: "konsolen-2786", selected: s.category_path === "konsolen-2786" }, "Konsolen"))),
     field("Titel muss eines enthalten (leer = egal)", "title_contains_any", (s.title_contains_any || []).join(", "), "game boy, gba"),
     field("Titel darf nicht enthalten", "exclude", (s.exclude || []).join(", "), "hülle, defekt"),
     h("div", { class: "grid2" },
@@ -350,7 +354,7 @@ function collectCfg() {
       if (!Number.isFinite(n)) throw new Error(`„${v}“ ist keine gültige Preisangabe`);
       return n;
     };
-    return { name: g("name").trim(), keywords: list("keywords"), title_contains_any: list("title_contains_any"),
+    return { name: g("name").trim(), keywords: list("keywords"), category_path: g("category_path"), title_contains_any: list("title_contains_any"),
              exclude: list("exclude"), min_price: num("min_price"), max_price: num("max_price") };
   });
   const names = new Set();
