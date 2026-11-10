@@ -1,8 +1,10 @@
+
 name: Check listings
 
 on:
   schedule:
-    - cron: "3/10 * * * *"   # alle 10 Minuten (GitHub kann Läufe um einige Minuten verzögern)
+    - cron: "7,17,27,37,47,57 * * * *"
+
   workflow_dispatch:
     inputs:
       test:
