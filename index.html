@@ -22,6 +22,8 @@ header{padding:14px 16px 6px}
 h1{margin:0;font-size:26px;letter-spacing:-.3px}
 h2{margin:0 0 4px;font-size:17px}
 .sub{color:var(--muted);font-size:13px;min-height:18px}
+.sub.ok{color:var(--ok)}
+.sub.err{color:var(--err)}
 button{font:inherit;cursor:pointer}
 .icon-btn{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:10px;padding:6px 12px;font-size:18px}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:6px 16px 10px;margin:0 -16px;scrollbar-width:none}
@@ -62,6 +64,7 @@ ol{padding-left:20px;margin:8px 0}
 <header>
   <div class="row"><h1>Deal-Alert</h1><button class="icon-btn" id="refresh" aria-label="Aktualisieren">⟳</button></div>
   <div class="sub" id="sub"></div>
+  <div class="sub" id="run"></div>
 </header>
 <main>
   <section id="view-list"></section>
@@ -140,6 +143,7 @@ async function loadListings() {
     loadError = String(e.message || e);
   }
   renderListings();
+  loadRun(false);
 }
 
 function renderListings() {
@@ -178,6 +182,54 @@ function renderListings() {
 }
 
 /* -------------------------------------------------------- Suchen bearbeiten */
+
+/* ------------------------------------------------------- Letzter Suchlauf */
+
+let runInfo = null;
+let runFetchedAt = 0;
+const STALE_MIN = 45;
+
+async function loadRun(force) {
+  if (!force && Date.now() - runFetchedAt < 120000) { renderRun(); return; }
+  runFetchedAt = Date.now();
+  try {
+    const d = await gh("/actions/workflows/check.yml/runs?per_page=1");
+    const r = (d.workflow_runs || [])[0];
+    runInfo = r ? { at: r.run_started_at || r.created_at, status: r.status, conclusion: r.conclusion } : { none: true };
+  } catch (e) {
+    runInfo = { error: String(e.message || e) };
+  }
+  renderRun();
+}
+
+function renderRun() {
+  const el = $("#run");
+  if (!el) return;
+  el.className = "sub";
+  if (!runInfo) { el.textContent = ""; return; }
+  if (runInfo.error) { el.textContent = "Letzter Suchlauf: nicht abrufbar"; return; }
+  if (runInfo.none) { el.textContent = "Letzter Suchlauf: noch keiner"; return; }
+  const when = new Date(runInfo.at);
+  if (isNaN(when.getTime())) { el.textContent = ""; return; }
+  const clock = when.toLocaleTimeString("de-AT", { hour: "2-digit", minute: "2-digit" });
+  let txt = `Letzter Suchlauf: ${clock} Uhr (${ago(runInfo.at)})`;
+  let kind = "";
+  if (runInfo.status !== "completed") {
+    txt += " · läuft gerade";
+  } else if (runInfo.conclusion === "success") {
+    txt += " · erfolgreich";
+    kind = "ok";
+  } else {
+    txt += " · fehlgeschlagen";
+    kind = "err";
+  }
+  if (Date.now() - when.getTime() > STALE_MIN * 60000) {
+    txt += `. Seit über ${STALE_MIN} Minuten kein neuer Lauf (GitHub verzögert oder der Zeitplan ist pausiert).`;
+    kind = "err";
+  }
+  el.textContent = txt;
+  if (kind) el.classList.add(kind);
+}
 
 const cfgState = { cfg: null, sha: null, msg: "", kind: "", loading: false };
 
@@ -366,6 +418,7 @@ function show(tab) {
   $("#tab-list").setAttribute("aria-selected", String(list));
   $("#tab-cfg").setAttribute("aria-selected", String(!list));
   $("#refresh").hidden = !list;
+  $("#run").hidden = !list;
   if (list) { renderListings(); }
   else if (!cfgState.cfg && !cfgState.loading) { loadCfg(); }
   else { renderCfg(); }
@@ -374,7 +427,7 @@ function show(tab) {
 
 $("#tab-list").addEventListener("click", () => show("list"));
 $("#tab-cfg").addEventListener("click", () => show("cfg"));
-$("#refresh").addEventListener("click", loadListings);
+$("#refresh").addEventListener("click", () => { loadListings(); loadRun(true); });
 
 function markVisit() { store.set("lastVisit", String(Date.now())); }
 window.addEventListener("pagehide", markVisit);
