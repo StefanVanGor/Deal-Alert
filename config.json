@@ -15,12 +15,21 @@
         "sp"
       ],
       "title_contains_any": [
-        "game boy",
-        "gameboy",
-        "gba",
-        "gbc"
+        "konsole",
+        "console",
+        "color",
+        "advance",
+        "pocket",
+        "classic",
+        "dmg",
+        "micro",
+        "gbc",
+        "gba sp",
+        "handheld"
       ],
-      "exclude": [],
+      "exclude": [
+        "nur spiel"
+      ],
       "min_price": null,
       "max_price": 50
     },
