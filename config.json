@@ -6,25 +6,25 @@
       "name": "Game Boy",
       "keywords": ["game boy", "gameboy", "gba"],
       "title_contains_any": ["game boy", "gameboy", "gba", "gbc"],
-      "exclude": [],
+      "exclude": ["hülle", "tasche", "schutzfolie", "ladekabel"],
       "min_price": null,
-      "max_price": null
+      "max_price": 150
     },
     {
       "name": "Nintendo Switch",
       "keywords": ["nintendo switch"],
       "title_contains_any": ["switch"],
-      "exclude": [],
+      "exclude": ["hülle", "tasche", "schutzfolie", "ladekabel", "skin"],
       "min_price": null,
-      "max_price": null
+      "max_price": 250
     },
     {
       "name": "Nintendo Konsolen",
       "keywords": ["nintendo konsole"],
       "title_contains_any": [],
-      "exclude": [],
+      "exclude": ["hülle", "tasche", "schutzfolie", "ladekabel"],
       "min_price": null,
-      "max_price": null
+      "max_price": 150
     }
   ]
 }
