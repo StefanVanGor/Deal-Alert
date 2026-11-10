@@ -32,7 +32,7 @@ USER_AGENT = (
 )
 MAX_SEEN = 3000          # gemerkte Anzeigen pro Suche
 MAX_LISTINGS = 300       # Treffer, die die Web-App anzeigt
-MAX_SINGLE_PUSHES = 5    # mehr neue Treffer pro Lauf -> Sammelnachricht
+MAX_PUSH_ITEMS = 20      # maximal so viele Treffer in einer Sammel-Push-Nachricht
 FAIL_ALERT_AFTER = 6     # so viele Läufe in Folge ohne Daten -> Warn-Push
 
 
@@ -403,8 +403,6 @@ def main(argv=None) -> int:
         # ---- Benachrichtigungen
         entries = list(pending.values())
         sent_entries = []
-        # Bei genau einem Treffer über dem Limit lieber einzeln senden als "1 weitere"
-        limit = MAX_SINGLE_PUSHES if len(entries) > MAX_SINGLE_PUSHES + 1 else len(entries)
 
 
         def mark(entry_list):
@@ -414,33 +412,28 @@ def main(argv=None) -> int:
                     if e["item"]["id"] not in lst:
                         lst.append(e["item"]["id"])
 
-        for e in entries[:limit]:
-            it = e["item"]
-            title = f"{it['platform'].title()} · {fmt_price(it['price'])}"
-            msg = it["title"] + (f"\n{it['extra']}" if it["extra"] else "")
+        # Pro Suchlauf genau eine Push-Nachricht mit einer kompakten Trefferübersicht.
+        if entries:
+            lines = []
+            for e in entries[:MAX_PUSH_ITEMS]:
+                it = e["item"]
+                line = f"{it['platform'].title()}: {it['title']} ({fmt_price(it['price'])})"
+                if it["extra"]:
+                    line += f" · {it['extra']}"
+                lines.append(line)
+            if len(entries) > MAX_PUSH_ITEMS:
+                lines.append(f"… und {len(entries) - MAX_PUSH_ITEMS} weitere Anzeigen")
+            message = "\n".join(lines)
             if dry:
-                log(f"[DRY] {title} | {msg!r} | {it['url']}")
-                continue
-            try:
-                push(server, topic, title, msg, click=it["url"], tags=["video_game"])
-                sent_entries.append(e)
-            except Exception as ex:  # noqa: BLE001
-                log(f"Push fehlgeschlagen ({it['id']}): {ex} - wird beim nächsten Lauf erneut versucht")
-
-        rest = entries[limit:]
-        if rest:
-            lines = [f"{e['item']['title']} ({fmt_price(e['item']['price'])})" for e in rest[:8]]
-            if len(rest) > 8:
-                lines.append(f"… und {len(rest) - 8} weitere")
-            if dry:
-                log("[DRY] Sammelnachricht:\n" + "\n".join(lines))
+                log(f"[DRY] Sammel-Push für {len(entries)} neue Anzeigen:\n{message}")
             else:
                 try:
-                    push(server, topic, f"{len(rest)} weitere neue Anzeigen", "\n".join(lines),
-                         click=rest[0]["item"]["url"], tags=["video_game"])
-                    sent_entries.extend(rest)
+                    push(server, topic, f"{len(entries)} neue Anzeigen gefunden", message,
+                         click=entries[0]["item"]["url"], tags=["video_game"])
+                    sent_entries.extend(entries)
+                    log(f"Eine Sammel-Push-Nachricht für {len(entries)} neue Anzeigen gesendet.")
                 except Exception as ex:  # noqa: BLE001
-                    log(f"Sammel-Push fehlgeschlagen: {ex}")
+                    log(f"Sammel-Push fehlgeschlagen: {ex} - wird beim nächsten Lauf erneut versucht")
 
         if not dry:
             mark(sent_entries)
