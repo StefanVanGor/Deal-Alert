@@ -291,11 +291,13 @@ def main(argv=None) -> int:
                     first_run = ikey not in initialized
                     new = 0
                     for it in items:
-                        if platform == "willhaben" and matches(it, s):
+                        if matches(it, s):
                             current_listings.setdefault((platform, it["id"]), {
                                 "platform": platform, "id": it["id"], "title": it["title"],
                                 "price": it["price"], "extra": it["extra"], "url": it["url"],
-                                "search": s["name"], "paylivery": True
+                                "search": s["name"],
+                                "paylivery": platform == "willhaben",
+                                "buyer_protection": platform == "vinted"
                             })
                         if it["id"] in seen_set:
                             continue
@@ -328,7 +330,7 @@ def main(argv=None) -> int:
             else:
                 fails[platform] = 0
 
-        # ---- Trefferliste: ausschließlich aktuelle, vom PayLivery-Suchfilter gelieferte Anzeigen
+        # ---- Trefferliste: aktuelle passende Anzeigen von Willhaben und Vinted
         if not dry:
             old_listings = {
                 (x.get("platform"), x.get("id")): x
