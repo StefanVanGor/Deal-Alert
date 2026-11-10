@@ -78,7 +78,11 @@ def fetch_willhaben(keyword: str, search: dict, cfg: dict) -> list[dict]:
         params["PRICE_TO"] = str(int(search["max_price"]))
     if search.get("min_price") is not None:
         params["PRICE_FROM"] = str(int(search["min_price"]))
-    url = "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz?" + urllib.parse.urlencode(params)
+    category_path = (search.get("category_path") or "").strip().strip("/")
+    base_path = "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz"
+    if category_path:
+        base_path += "/" + category_path
+    url = base_path + "?" + urllib.parse.urlencode(params)
 
     html = http_get(url)
     m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
