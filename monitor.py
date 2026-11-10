@@ -19,6 +19,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -30,6 +31,7 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 )
 MAX_SEEN = 3000          # gemerkte Anzeigen pro Suche
+MAX_LISTINGS = 300       # Treffer, die die Web-App anzeigt
 MAX_SINGLE_PUSHES = 5    # mehr neue Treffer pro Lauf -> Sammelnachricht
 FAIL_ALERT_AFTER = 6     # so viele Läufe in Folge ohne Daten -> Warn-Push
 
@@ -318,6 +320,21 @@ def main(argv=None) -> int:
         # ---- Benachrichtigungen
         entries = list(pending.values())
         sent_entries = []
+        # Bei genau einem Treffer über dem Limit lieber einzeln senden als "1 weitere"
+        limit = MAX_SINGLE_PUSHES if len(entries) > MAX_SINGLE_PUSHES + 1 else len(entries)
+
+        if entries and not dry:  # Trefferliste für die Web-App
+            listings = state.get("listings") or []
+            known = {(x.get("platform"), x.get("id")) for x in listings}
+            now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            fresh = [
+                {"platform": e["item"]["platform"], "id": e["item"]["id"], "title": e["item"]["title"],
+                 "price": e["item"]["price"], "extra": e["item"]["extra"], "url": e["item"]["url"],
+                 "search": e["name"], "found_at": now}
+                for e in entries
+                if (e["item"]["platform"], e["item"]["id"]) not in known
+            ]
+            state["listings"] = (fresh + listings)[:MAX_LISTINGS]
 
         def mark(entry_list):
             for e in entry_list:
@@ -326,7 +343,7 @@ def main(argv=None) -> int:
                     if e["item"]["id"] not in lst:
                         lst.append(e["item"]["id"])
 
-        for e in entries[:MAX_SINGLE_PUSHES]:
+        for e in entries[:limit]:
             it = e["item"]
             title = f"{it['platform'].title()} · {fmt_price(it['price'])}"
             msg = it["title"] + (f"\n{it['extra']}" if it["extra"] else "")
@@ -339,7 +356,7 @@ def main(argv=None) -> int:
             except Exception as ex:  # noqa: BLE001
                 log(f"Push fehlgeschlagen ({it['id']}): {ex} - wird beim nächsten Lauf erneut versucht")
 
-        rest = entries[MAX_SINGLE_PUSHES:]
+        rest = entries[limit:]
         if rest:
             lines = [f"{e['item']['title']} ({fmt_price(e['item']['price'])})" for e in rest[:8]]
             if len(rest) > 8:
