@@ -22,6 +22,7 @@ header{padding:14px 16px 6px}
 h1{margin:0;font-size:26px;letter-spacing:-.3px}
 h2{margin:0 0 4px;font-size:17px}
 .sub{color:var(--muted);font-size:13px;min-height:18px}
+#run{white-space:pre-line;line-height:1.5}
 .sub.ok{color:var(--ok)}
 .sub.err{color:var(--err)}
 button{font:inherit;cursor:pointer}
@@ -199,7 +200,16 @@ function renderListings() {
 
 let runInfo = null;
 let runFetchedAt = 0;
-const STALE_MIN = 45;
+let optimisticManualRun = null;
+const STALE_MIN = 25;
+
+function summarizeRun(r) {
+  return r ? {
+    at: r.run_started_at || r.created_at,
+    status: r.status,
+    conclusion: r.conclusion
+  } : null;
+}
 
 async function startManualRun() {
   const btn = $("#manual-run");
@@ -213,9 +223,10 @@ async function startManualRun() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ref: "main" }),
     });
-    runInfo = { at: new Date().toISOString(), status: "queued", conclusion: null };
+    optimisticManualRun = { at: new Date().toISOString(), status: "queued", conclusion: null };
+    if (!runInfo) runInfo = { automatic: null, manual: optimisticManualRun };
+    else runInfo.manual = optimisticManualRun;
     renderRun();
-    $("#run").textContent = "Suchlauf wurde gestartet · GitHub Actions übernimmt in Kürze.";
     setTimeout(() => loadRun(true), 5000);
   } catch (e) {
     $("#run").className = "sub err";
@@ -230,13 +241,43 @@ async function loadRun(force) {
   if (!force && Date.now() - runFetchedAt < 120000) { renderRun(); return; }
   runFetchedAt = Date.now();
   try {
-    const d = await gh("/actions/workflows/check.yml/runs?per_page=1");
-    const r = (d.workflow_runs || [])[0];
-    runInfo = r ? { at: r.run_started_at || r.created_at, status: r.status, conclusion: r.conclusion } : { none: true };
+    const d = await gh("/actions/workflows/check.yml/runs?per_page=30");
+    const runs = d.workflow_runs || [];
+    const automatic = runs.find(r => r.event === "schedule");
+    const manual = runs.find(r => r.event === "workflow_dispatch");
+    const foundManual = summarizeRun(manual);
+    if (!foundManual && optimisticManualRun &&
+        Date.now() - Date.parse(optimisticManualRun.at) < 120000) {
+      runInfo = { automatic: summarizeRun(automatic), manual: optimisticManualRun };
+    } else {
+      optimisticManualRun = null;
+      runInfo = {
+        automatic: summarizeRun(automatic),
+        manual: foundManual
+      };
+    }
   } catch (e) {
     runInfo = { error: String(e.message || e) };
   }
   renderRun();
+}
+
+function formatRunLine(label, run, stale = false) {
+  if (!run) return label + ": noch kein Lauf";
+  const when = new Date(run.at);
+  if (isNaN(when.getTime())) return label + ": Zeit nicht verfügbar";
+  const clock = when.toLocaleTimeString("de-AT", { hour: "2-digit", minute: "2-digit" });
+  let txt = label + ": " + clock + " Uhr (" + ago(run.at) + ")";
+  let kind = "";
+  if (run.status === "queued") txt += " · wartet bei GitHub";
+  else if (run.status === "in_progress") txt += " · läuft";
+  else if (run.conclusion === "success") { txt += " · erfolgreich"; kind = "ok"; }
+  else if (run.status === "completed") { txt += " · fehlgeschlagen"; kind = "err"; }
+  if (stale && Date.now() - when.getTime() > STALE_MIN * 60000) {
+    txt += " · WARNUNG: seit über " + STALE_MIN + " Min. kein automatischer Lauf";
+    kind = "err";
+  }
+  return { text: txt, kind };
 }
 
 function renderRun() {
@@ -244,28 +285,20 @@ function renderRun() {
   if (!el) return;
   el.className = "sub";
   if (!runInfo) { el.textContent = ""; return; }
-  if (runInfo.error) { el.textContent = "Letzter Suchlauf: nicht abrufbar"; return; }
-  if (runInfo.none) { el.textContent = "Letzter Suchlauf: noch keiner"; return; }
-  const when = new Date(runInfo.at);
-  if (isNaN(when.getTime())) { el.textContent = ""; return; }
-  const clock = when.toLocaleTimeString("de-AT", { hour: "2-digit", minute: "2-digit" });
-  let txt = `Letzter Suchlauf: ${clock} Uhr (${ago(runInfo.at)})`;
-  let kind = "";
-  if (runInfo.status !== "completed") {
-    txt += " · läuft gerade";
-  } else if (runInfo.conclusion === "success") {
-    txt += " · erfolgreich";
-    kind = "ok";
-  } else {
-    txt += " · fehlgeschlagen";
-    kind = "err";
+  if (runInfo.error) { el.textContent = "Suchlauf-Status: nicht abrufbar"; el.classList.add("err"); return; }
+  const automatic = formatRunLine("Automatisch", runInfo.automatic, true);
+  const lines = [automatic.text];
+  let hasError = automatic.kind === "err";
+  let hasSuccess = automatic.kind === "ok";
+  if (runInfo.manual) {
+    const manual = formatRunLine("Manuell", runInfo.manual);
+    lines.push(manual.text);
+    hasError = hasError || manual.kind === "err";
+    hasSuccess = hasSuccess || manual.kind === "ok";
   }
-  if (Date.now() - when.getTime() > STALE_MIN * 60000) {
-    txt += `. Seit über ${STALE_MIN} Minuten kein neuer Lauf (GitHub verzögert oder der Zeitplan ist pausiert).`;
-    kind = "err";
-  }
-  el.textContent = txt;
-  if (kind) el.classList.add(kind);
+  el.textContent = lines.join("\n");
+  if (hasError) el.classList.add("err");
+  else if (hasSuccess) el.classList.add("ok");
 }
 
 const cfgState = { cfg: null, sha: null, msg: "", kind: "", loading: false };
