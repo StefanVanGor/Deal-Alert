@@ -15,7 +15,8 @@
       "title_contains_any": [],
       "exclude": [],
       "min_price": 30,
-      "max_price": 60
+      "max_price": 60,
+      "category_path": "konsolen-2786"
     },
     {
       "name": "Nintendo Switch",
@@ -26,7 +27,8 @@
       "title_contains_any": [],
       "exclude": [],
       "min_price": 30,
-      "max_price": 80
+      "max_price": 80,
+      "category_path": "konsolen-2786"
     },
     {
       "name": "Einhell",
