@@ -73,7 +73,7 @@ def attr_map(ad: dict) -> dict:
 
 
 def fetch_willhaben(keyword: str, search: dict, cfg: dict) -> list[dict]:
-    params = {"keyword": keyword, "sort": "1", "rows": "60"}  # sort=1: neueste zuerst
+    params = {"keyword": keyword, "sort": "1", "rows": "60", "paylivery": "true"}  # nur PayLivery/Käuferschutz
     if search.get("max_price") is not None:
         params["PRICE_TO"] = str(int(search["max_price"]))
     if search.get("min_price") is not None:
@@ -258,6 +258,7 @@ def main(argv=None) -> int:
     fails = state.setdefault("fails", {})
 
     pending: dict = {}  # (platform, id) -> {"item", "name", "skeys"}
+    current_listings: dict = {}  # aktuell passende Anzeigen; alte, ungeprüfte Einträge verschwinden
 
     try:
         for platform in cfg.get("platforms", ["willhaben", "vinted"]):
@@ -286,6 +287,12 @@ def main(argv=None) -> int:
                     first_run = ikey not in initialized
                     new = 0
                     for it in items:
+                        if platform == "willhaben" and matches(it, s):
+                            current_listings.setdefault((platform, it["id"]), {
+                                "platform": platform, "id": it["id"], "title": it["title"],
+                                "price": it["price"], "extra": it["extra"], "url": it["url"],
+                                "search": s["name"], "paylivery": True
+                            })
                         if it["id"] in seen_set:
                             continue
                         if first_run or not matches(it, s):
@@ -317,24 +324,25 @@ def main(argv=None) -> int:
             else:
                 fails[platform] = 0
 
+        # ---- Trefferliste: ausschließlich aktuelle, vom PayLivery-Suchfilter gelieferte Anzeigen
+        if not dry:
+            old_listings = {
+                (x.get("platform"), x.get("id")): x
+                for x in (state.get("listings") or [])
+            }
+            now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            refreshed = []
+            for key, item in current_listings.items():
+                old = old_listings.get(key, {})
+                refreshed.append({**item, "found_at": old.get("found_at", now)})
+            state["listings"] = refreshed[:MAX_LISTINGS]
+
         # ---- Benachrichtigungen
         entries = list(pending.values())
         sent_entries = []
         # Bei genau einem Treffer über dem Limit lieber einzeln senden als "1 weitere"
         limit = MAX_SINGLE_PUSHES if len(entries) > MAX_SINGLE_PUSHES + 1 else len(entries)
 
-        if entries and not dry:  # Trefferliste für die Web-App
-            listings = state.get("listings") or []
-            known = {(x.get("platform"), x.get("id")) for x in listings}
-            now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-            fresh = [
-                {"platform": e["item"]["platform"], "id": e["item"]["id"], "title": e["item"]["title"],
-                 "price": e["item"]["price"], "extra": e["item"]["extra"], "url": e["item"]["url"],
-                 "search": e["name"], "found_at": now}
-                for e in entries
-                if (e["item"]["platform"], e["item"]["id"]) not in known
-            ]
-            state["listings"] = (fresh + listings)[:MAX_LISTINGS]
 
         def mark(entry_list):
             for e in entry_list:
