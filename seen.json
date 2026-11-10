@@ -1,6 +1,6 @@
 {
  "fails": {
-  "vinted": 2,
+  "vinted": 3,
   "willhaben": 0
  },
  "initialized": [
@@ -603,17 +603,6 @@
    "search": "Game Boy",
    "title": "Nintendo DSL + Stylus + Charger",
    "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-dsl-stylus-charger-2066871188/"
-  },
-  {
-   "extra": "Frauental an der Laßnitz",
-   "found_at": "2026-11-10T15:44:26+00:00",
-   "id": "974722066",
-   "paylivery": true,
-   "platform": "willhaben",
-   "price": 75.0,
-   "search": "Nintendo Switch",
-   "title": "nintendo switch",
-   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-974722066/"
   },
   {
    "extra": "Sankt Leonhard",
@@ -1243,6 +1232,17 @@
    "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-racing-wheel-1356599850/"
   },
   {
+   "extra": "Terfens",
+   "found_at": "2026-11-10T15:54:57+00:00",
+   "id": "2032104039",
+   "paylivery": true,
+   "platform": "willhaben",
+   "price": 35.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo Switch 2 Kamera",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-2-kamera-2032104039/"
+  },
+  {
    "extra": "Wien, 22. Bezirk, Donaustadt",
    "found_at": "2026-11-10T14:46:17+00:00",
    "id": "1416911131",
@@ -1329,6 +1329,17 @@
    "search": "Nintendo Switch",
    "title": "Nintendo Switch Lite",
    "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-lite-1440431414/"
+  },
+  {
+   "extra": "Klagenfurt",
+   "found_at": "2026-11-10T15:54:57+00:00",
+   "id": "966645084",
+   "paylivery": true,
+   "platform": "willhaben",
+   "price": 55.0,
+   "search": "Einhell",
+   "title": "Einhell TE-SG 18/10 Li Kartuschenpresse",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/einhell-te-sg-18-10-li-kartuschenpresse-966645084/"
   },
   {
    "extra": "Wien, 19. Bezirk, Döbling",
@@ -1978,20 +1989,10 @@
    "search": "Einhell",
    "title": "Druckluft Schlagschrauber",
    "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/druckluft-schlagschrauber-2107241082/"
-  },
-  {
-   "extra": "Hintnausdorf",
-   "found_at": "2026-11-10T15:27:25+00:00",
-   "id": "964418590",
-   "paylivery": true,
-   "platform": "willhaben",
-   "price": 1.0,
-   "search": "Einhell",
-   "title": "Betriebsanleitung Einhell AFN5 - Batterieladegerät",
-   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/betriebsanleitung-einhell-afn5-batterieladegeraet-964418590/"
   }
  ],
  "seen": {
+  "vinted:Einhell": [],
   "vinted:Game Boy": [],
   "vinted:Nintendo Konsolen": [],
   "vinted:Nintendo Switch": [],
@@ -2111,7 +2112,8 @@
    "953691133",
    "1171200960",
    "2076113173",
-   "1699068633"
+   "1699068633",
+   "966645084"
   ],
   "willhaben:Game Boy": [
    "1922559368",
