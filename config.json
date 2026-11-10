@@ -9,7 +9,10 @@
       "keywords": [
         "game boy",
         "gameboy",
-        "gba"
+        "gba",
+        "color",
+        "advance",
+        "sp"
       ],
       "title_contains_any": [
         "game boy",
@@ -19,29 +22,18 @@
       ],
       "exclude": [],
       "min_price": null,
-      "max_price": null
+      "max_price": 50
     },
     {
       "name": "Nintendo Switch",
       "keywords": [
-        "nintendo switch"
-      ],
-      "title_contains_any": [
-        "switch"
-      ],
-      "exclude": [],
-      "min_price": null,
-      "max_price": null
-    },
-    {
-      "name": "Nintendo Konsolen",
-      "keywords": [
-        "nintendo konsole"
+        "nintendo switch",
+        "switch lite"
       ],
       "title_contains_any": [],
       "exclude": [],
       "min_price": null,
-      "max_price": null
+      "max_price": 80
     }
   ]
 }
