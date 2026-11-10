@@ -1,6 +1,7 @@
 {
   "platforms": [
-    "willhaben"
+    "willhaben",
+    "vinted"
   ],
   "vinted_domain": "www.vinted.at",
   "searches": [
@@ -12,11 +13,11 @@
         "gba",
         "advance"
       ],
+      "category_path": "konsolen-2786",
       "title_contains_any": [],
       "exclude": [],
       "min_price": 30,
-      "max_price": 60,
-      "category_path": "konsolen-2786"
+      "max_price": 60
     },
     {
       "name": "Nintendo Switch",
@@ -24,17 +25,18 @@
         "nintendo switch",
         "switch lite"
       ],
+      "category_path": "konsolen-2786",
       "title_contains_any": [],
       "exclude": [],
       "min_price": 30,
-      "max_price": 80,
-      "category_path": "konsolen-2786"
+      "max_price": 80
     },
     {
       "name": "Einhell",
       "keywords": [
         "Einhell"
       ],
+      "category_path": "",
       "title_contains_any": [],
       "exclude": [],
       "min_price": null,
