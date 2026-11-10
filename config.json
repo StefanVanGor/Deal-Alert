@@ -29,6 +29,16 @@
       "exclude": [],
       "min_price": 30,
       "max_price": 80
+    },
+    {
+      "name": "Einhell",
+      "keywords": [
+        "Einhell"
+      ],
+      "title_contains_any": [],
+      "exclude": [],
+      "min_price": null,
+      "max_price": 100
     }
   ]
 }
