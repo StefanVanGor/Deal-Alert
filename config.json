@@ -16,11 +16,8 @@
       "category_path": "konsolen-2786",
       "title_contains_any": [],
       "exclude": [],
-      "min_price": 30,
-      "max_price": 60,
-      "vinted_catalog_ids": [
-        3025
-      ]
+      "min_price": 20,
+      "max_price": 60
     },
     {
       "name": "Nintendo Switch",
@@ -32,10 +29,7 @@
       "title_contains_any": [],
       "exclude": [],
       "min_price": 30,
-      "max_price": 80,
-      "vinted_catalog_ids": [
-        3025
-      ]
+      "max_price": 80
     },
     {
       "name": "Einhell",
