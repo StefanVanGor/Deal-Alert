@@ -103,6 +103,7 @@ const PLATFORM_LABEL = { willhaben: "Willhaben", vinted: "Vinted" };
 /* ------------------------------------------------------------ Trefferliste */
 
 let listings = [];
+let activeSearchNames = [];
 let filter = "Alle";
 let loadedAt = null;
 let loadError = null;
@@ -137,6 +138,14 @@ async function loadListings() {
       const d = await r.json();
       listings = Array.isArray(d.listings) ? d.listings : [];
     }
+    // Filter aus den aktuellen Suchkriterien statt aus alten Treffern bilden.
+    try {
+      const cr = await fetch("config.json?ts=" + Date.now(), { cache: "no-store" });
+      if (cr.ok) {
+        const cfg = await cr.json();
+        activeSearchNames = Array.isArray(cfg.searches) ? cfg.searches.map(s => s.name).filter(Boolean) : [];
+      }
+    } catch {}
     loadError = null;
     loadedAt = new Date();
   } catch (e) {
@@ -150,14 +159,15 @@ function renderListings() {
   const root = $("#view-list");
   root.replaceChildren();
 
-  const names = ["Alle", ...new Set(listings.map(l => l.search).filter(Boolean))];
+  const visibleListings = activeSearchNames.length ? listings.filter(l => activeSearchNames.includes(l.search)) : listings;
+  const names = ["Alle", ...activeSearchNames];
   if (!names.includes(filter)) filter = "Alle";
   if (names.length > 2) {
     root.append(h("div", { class: "chips" }, names.map(n =>
       h("button", { class: "chip", "aria-pressed": String(n === filter), onclick: () => { filter = n; renderListings(); } }, n))));
   }
 
-  const shown = listings.filter(l => filter === "Alle" || l.search === filter);
+  const shown = visibleListings.filter(l => filter === "Alle" || l.search === filter);
   if (loadError) root.append(h("div", { class: "status err" }, "Daten konnten nicht geladen werden: " + loadError));
   if (!shown.length && !loadError) {
     root.append(h("div", { class: "empty" }, "Noch keine neuen Treffer. Sobald das Skript eine passende neue Anzeige findet, erscheint sie hier."));
@@ -176,7 +186,7 @@ function renderListings() {
   }
 
   const parts = [];
-  if (listings.length) parts.push(`${listings.length} Treffer`, "zuletzt " + ago(listings[0].found_at));
+  if (visibleListings.length) parts.push(`${visibleListings.length} Treffer`, "zuletzt " + ago(visibleListings[0].found_at));
   if (loadedAt) parts.push("Stand " + loadedAt.toLocaleTimeString("de-AT", { hour: "2-digit", minute: "2-digit" }));
   $("#sub").textContent = parts.join(" · ");
 }
