@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deal-Alert</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Deal-Alert">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#2563eb">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAACFUlEQVR42u3dwW3DQAxFQTajylx+iqAb8CkJDH5yiFeBOPBBK2Pref1IHyuPQHAIDsEhOASH4BAcgkNwCA4JDsEhOASH4BAcgkNwCA7BIcEhOASH4BAcgkNwCA7BITgkOASH4BAcgkNwCI6AuttDuIuj/zZwAAHKdhz9rYGDiXNKCgtEluPoeQMHFpuJFBaIbMPRaQMHFquIFBl8bMDRWwYOLOKJFBl8pOLo7QMHGZE+igw+wnD0vYGDjCQfcMCRg6NvDxxkZPgoMviAA45YHEAM9FFk8AEHHIE4IBjrAw44puKw/sk+4IBjJA6LH+4DDjjm4bDy+T7ggAMOOFJwWHaEDzjggAOOCBzWnOIDDjjggAMOOIJxWHCQDzjggAMOOOCAAw44DBwGDjjggAMOOOAg464PvxxkwAEHHHDAAQccBg4DBxxw0LDFChxwwAEHHHDAYeAwcBg4DBx8bHkhBgcccMAx9mzFIhMPWeCAAw44Jh/ZW2fcwT0ccPjfChlwwAEHHCfvstfjunLBITgEh+C41eQLw+GYfj0lHGTwAcdvX8fBQQYfcMABx7+f78ABBxxwwAEHHHDAAQcccMABBxxwwAGHN6RwwAEHH05l+SADDl+CweEbUjgEh+AQHIJDcAgOwSHBITgEh+AQHIJDcAgOwSE4JDgEh+AQHIJDcAgOwSE4BIfg8BQEh+AQHIJDcAgOJfUG/P0Shps4PMsAAAAASUVORK5CYII=">
+<style>
+:root{--bg:#f5f6f8;--card:#fff;--text:#14171c;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb;--accent-text:#fff;--ok:#15803d;--err:#dc2626}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1116;--card:#171b22;--text:#e8eaee;--muted:#98a1b0;--line:#272d38;--accent:#5b8def;--accent-text:#0b1020;--ok:#4ade80;--err:#f87171}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+body{padding-top:env(safe-area-inset-top);padding-bottom:calc(70px + env(safe-area-inset-bottom))}
+header{padding:14px 16px 6px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+h1{margin:0;font-size:26px;letter-spacing:-.3px}
+h2{margin:0 0 4px;font-size:17px}
+.sub{color:var(--muted);font-size:13px;min-height:18px}
+button{font:inherit;cursor:pointer}
+.icon-btn{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:10px;padding:6px 12px;font-size:18px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:6px 16px 10px;margin:0 -16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:6px 14px;font-size:14px}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-text)}
+main{padding:0 16px}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:0 0 10px;color:inherit;text-decoration:none}
+.card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.price{font-weight:700;font-size:18px;white-space:nowrap}
+.title{word-break:break-word;font-weight:500}
+.meta{color:var(--muted);font-size:13px;margin-top:6px}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:6px;background:var(--line);color:var(--text);margin-right:6px;vertical-align:1px}
+.tag.new{background:var(--accent);color:var(--accent-text)}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;border:0;background:none;color:var(--muted);padding:14px 0;font-size:15px}
+nav button[aria-selected="true"]{color:var(--accent);font-weight:700}
+.empty{color:var(--muted);text-align:center;padding:40px 10px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px}
+label{display:block;font-size:13px;color:var(--muted);margin:10px 0 4px}
+input[type=text],input[type=password]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);font:inherit}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{border:0;border-radius:10px;padding:11px 16px;background:var(--accent);color:var(--accent-text);font-weight:600}
+.btn.sec{background:var(--line);color:var(--text)}
+.btn.danger{background:transparent;color:var(--err);padding:8px 0}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.status{margin:10px 0;font-size:14px}
+.status.ok{color:var(--ok)}
+.status.err{color:var(--err)}
+.hint{font-size:13px;color:var(--muted)}
+.check{display:flex;align-items:center;gap:8px;margin:8px 0;font-size:16px;color:var(--text)}
+.check input{width:20px;height:20px}
+details summary{cursor:pointer;font-weight:600}
+ol{padding-left:20px;margin:8px 0}
+</style>
+</head>
+<body>
+<header>
+  <div class="row"><h1>Deal-Alert</h1><button class="icon-btn" id="refresh" aria-label="Aktualisieren">⟳</button></div>
+  <div class="sub" id="sub"></div>
+</header>
+<main>
+  <section id="view-list"></section>
+  <section id="view-cfg" hidden></section>
+</main>
+<nav>
+  <button id="tab-list" aria-selected="true">Treffer</button>
+  <button id="tab-cfg" aria-selected="false">Suchen</button>
+</nav>
+
+<script>
+"use strict";
+const $ = (s, r = document) => r.querySelector(s);
+
+function h(tag, props = {}, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(props)) {
+    if (k === "class") el.className = v;
+    else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+    else if (v !== null && v !== undefined && v !== false) el.setAttribute(k, v === true ? "" : v);
+  }
+  for (const kid of kids.flat()) {
+    if (kid !== null && kid !== undefined && kid !== false) el.append(kid.nodeType ? kid : String(kid));
+  }
+  return el;
+}
+
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+  del(k) { try { localStorage.removeItem(k); } catch {} },
+};
+
+const PLATFORM_LABEL = { willhaben: "Willhaben", vinted: "Vinted" };
+
+/* ------------------------------------------------------------ Trefferliste */
+
+let listings = [];
+let filter = "Alle";
+let loadedAt = null;
+let loadError = null;
+const lastVisit = Number(store.get("lastVisit") || 0);
+
+function ago(iso) {
+  const t = Date.parse(iso);
+  if (isNaN(t)) return "";
+  const s = Math.max(0, (Date.now() - t) / 1000);
+  if (s < 60) return "gerade eben";
+  const m = Math.floor(s / 60);
+  if (m < 60) return `vor ${m} Min.`;
+  const hrs = Math.floor(m / 60);
+  if (hrs < 24) return `vor ${hrs} Std.`;
+  const d = Math.floor(hrs / 24);
+  return d === 1 ? "vor 1 Tag" : `vor ${d} Tagen`;
+}
+
+function fmtPrice(p) {
+  if (p === null || p === undefined) return "Preis n/a";
+  return "€ " + (Number.isInteger(p) ? p : p.toFixed(2).replace(".", ","));
+}
+
+async function loadListings() {
+  try {
+    const r = await fetch("seen.json?ts=" + Date.now(), { cache: "no-store" });
+    if (r.status === 404) {
+      listings = [];
+    } else if (!r.ok) {
+      throw new Error("HTTP " + r.status);
+    } else {
+      const d = await r.json();
+      listings = Array.isArray(d.listings) ? d.listings : [];
+    }
+    loadError = null;
+    loadedAt = new Date();
+  } catch (e) {
+    loadError = String(e.message || e);
+  }
+  renderListings();
+}
+
+function renderListings() {
+  const root = $("#view-list");
+  root.replaceChildren();
+
+  const names = ["Alle", ...new Set(listings.map(l => l.search).filter(Boolean))];
+  if (!names.includes(filter)) filter = "Alle";
+  if (names.length > 2) {
+    root.append(h("div", { class: "chips" }, names.map(n =>
+      h("button", { class: "chip", "aria-pressed": String(n === filter), onclick: () => { filter = n; renderListings(); } }, n))));
+  }
+
+  const shown = listings.filter(l => filter === "Alle" || l.search === filter);
+  if (loadError) root.append(h("div", { class: "status err" }, "Daten konnten nicht geladen werden: " + loadError));
+  if (!shown.length && !loadError) {
+    root.append(h("div", { class: "empty" }, "Noch keine neuen Treffer. Sobald das Skript eine passende neue Anzeige findet, erscheint sie hier."));
+  }
+  for (const l of shown) {
+    const safe = /^https:\/\//.test(l.url || "");
+    const isNew = Date.parse(l.found_at) > lastVisit;
+    root.append(h(safe ? "a" : "div", { class: "card", href: safe ? l.url : null, target: safe ? "_blank" : null, rel: safe ? "noopener" : null },
+      h("div", { class: "top" },
+        h("div", { class: "title" }, l.title || "(ohne Titel)"),
+        h("div", { class: "price" }, fmtPrice(l.price))),
+      h("div", { class: "meta" },
+        h("span", { class: "tag" }, PLATFORM_LABEL[l.platform] || l.platform || "?"),
+        isNew ? h("span", { class: "tag new" }, "NEU") : null,
+        [l.search, l.extra, ago(l.found_at)].filter(Boolean).join(" · "))));
+  }
+
+  const parts = [];
+  if (listings.length) parts.push(`${listings.length} Treffer`, "zuletzt " + ago(listings[0].found_at));
+  if (loadedAt) parts.push("Stand " + loadedAt.toLocaleTimeString("de-AT", { hour: "2-digit", minute: "2-digit" }));
+  $("#sub").textContent = parts.join(" · ");
+}
+
+/* -------------------------------------------------------- Suchen bearbeiten */
+
+const cfgState = { cfg: null, sha: null, msg: "", kind: "", loading: false };
+
+function repoPath() {
+  const saved = store.get("repo");
+  if (saved) return saved;
+  const host = location.hostname;
+  if (host.endsWith(".github.io")) {
+    const owner = host.split(".")[0];
+    const repo = location.pathname.split("/")[1];
+    if (owner && repo) return owner + "/" + repo;
+  }
+  return "";
+}
+
+async function gh(path, opts = {}) {
+  const repo = repoPath();
+  if (!repo) throw new Error("Repository unbekannt (unten eintragen, z. B. Name/Deal-Alert)");
+  const token = store.get("token");
+  const headers = Object.assign({ Accept: "application/vnd.github+json" }, token ? { Authorization: "Bearer " + token } : {}, opts.headers || {});
+  const r = await fetch("https://api.github.com/repos/" + repo + path, Object.assign({}, opts, { headers, cache: "no-store" }));
+  if (!r.ok) {
+    let msg = "";
+    try { msg = (await r.json()).message; } catch {}
+    let hint = "";
+    if (r.status === 401) hint = " (Token ungültig oder abgelaufen)";
+    else if (r.status === 403 || r.status === 404) hint = token ? " (Token ohne Schreibrecht auf dieses Repository?)" : " (Token fehlt)";
+    else if (r.status === 409 || r.status === 422) hint = " (Datei wurde zwischenzeitlich geändert, bitte neu laden)";
+    const err = new Error(`GitHub ${r.status}${msg ? ": " + msg : ""}${hint}`);
+    err.status = r.status;
+    throw err;
+  }
+  return r.json();
+}
+
+const fromB64 = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, "")), c => c.charCodeAt(0)));
+const toB64 = s => { let bin = ""; new TextEncoder().encode(s).forEach(x => { bin += String.fromCharCode(x); }); return btoa(bin); };
+
+async function loadCfg() {
+  cfgState.loading = true;
+  cfgState.msg = ""; cfgState.kind = "";
+  renderCfg();
+  try {
+    const f = await gh("/contents/config.json?ts=" + Date.now());
+    cfgState.cfg = JSON.parse(fromB64(f.content));
+    cfgState.sha = f.sha;
+  } catch (e) {
+    cfgState.msg = "Suchkriterien konnten nicht geladen werden: " + e.message;
+    cfgState.kind = "err";
+  }
+  cfgState.loading = false;
+  renderCfg();
+}
+
+function searchCard(s) {
+  const field = (label, f, value, ph) => h("div", {}, h("label", {}, label),
+    h("input", { type: "text", "data-f": f, value: value ?? "", placeholder: ph || "", autocapitalize: "none", autocomplete: "off", autocorrect: "off", spellcheck: "false" }));
+  const card = h("div", { class: "panel search-card" },
+    field("Name der Suche", "name", s.name, "z. B. Game Boy"),
+    field("Suchbegriffe (mit Komma trennen)", "keywords", (s.keywords || []).join(", "), "game boy, gameboy"),
+    field("Titel muss eines enthalten (leer = egal)", "title_contains_any", (s.title_contains_any || []).join(", "), "game boy, gba"),
+    field("Titel darf nicht enthalten", "exclude", (s.exclude || []).join(", "), "hülle, defekt"),
+    h("div", { class: "grid2" },
+      field("Mindestpreis €", "min_price", s.min_price ?? "", "kein"),
+      field("Höchstpreis €", "max_price", s.max_price ?? "", "kein")),
+    h("button", { class: "btn danger", type: "button", onclick: () => {
+      if (confirm("Diese Suche entfernen?")) { card.remove(); } } }, "Suche entfernen"));
+  card.querySelectorAll('[data-f="min_price"],[data-f="max_price"]').forEach(i => i.setAttribute("inputmode", "decimal"));
+  return card;
+}
+
+function collectCfg() {
+  const cfg = JSON.parse(JSON.stringify(cfgState.cfg));
+  cfg.platforms = [...document.querySelectorAll("[data-platform]")].filter(i => i.checked).map(i => i.dataset.platform);
+  cfg.searches = [...document.querySelectorAll(".search-card")].map(card => {
+    const g = f => card.querySelector(`[data-f="${f}"]`).value;
+    const list = f => g(f).split(",").map(x => x.trim()).filter(Boolean);
+    const num = f => {
+      const v = g(f).trim().replace(",", ".");
+      if (v === "") return null;
+      const n = Number(v);
+      if (!Number.isFinite(n)) throw new Error(`„${v}“ ist keine gültige Preisangabe`);
+      return n;
+    };
+    return { name: g("name").trim(), keywords: list("keywords"), title_contains_any: list("title_contains_any"),
+             exclude: list("exclude"), min_price: num("min_price"), max_price: num("max_price") };
+  });
+  const names = new Set();
+  for (const s of cfg.searches) {
+    if (!s.name) throw new Error("Jede Suche braucht einen Namen");
+    if (!s.keywords.length) throw new Error(`Die Suche „${s.name}“ braucht mindestens einen Suchbegriff`);
+    if (names.has(s.name)) throw new Error(`Der Name „${s.name}“ kommt doppelt vor`);
+    names.add(s.name);
+  }
+  if (!cfg.searches.length) throw new Error("Es muss mindestens eine Suche geben");
+  if (!cfg.platforms.length) throw new Error("Wähle mindestens eine Plattform");
+  return cfg;
+}
+
+async function saveCfg() {
+  cfgState.kind = ""; cfgState.msg = "";
+  let cfg;
+  try { cfg = collectCfg(); } catch (e) { cfgState.msg = e.message; cfgState.kind = "err"; return setStatus(); }
+  if (!store.get("token")) { cfgState.msg = "Zum Speichern wird zuerst ein Token gebraucht (siehe unten)."; cfgState.kind = "err"; return setStatus(); }
+  try {
+    const res = await gh("/contents/config.json", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: "Suchkriterien über die App geändert", content: toB64(JSON.stringify(cfg, null, 2) + "\n"), sha: cfgState.sha }),
+    });
+    cfgState.sha = res.content.sha;
+    cfgState.cfg = cfg;
+    cfgState.msg = "Gespeichert. Gilt ab dem nächsten Lauf (alle ~10 Minuten).";
+    cfgState.kind = "ok";
+  } catch (e) {
+    cfgState.msg = "Speichern fehlgeschlagen: " + e.message;
+    cfgState.kind = "err";
+  }
+  setStatus();
+}
+
+function setStatus() {
+  const el = $("#cfg-status");
+  if (!el) return;
+  el.className = "status " + cfgState.kind;
+  el.textContent = cfgState.msg;
+}
+
+function renderCfg() {
+  const root = $("#view-cfg");
+  root.replaceChildren();
+  $("#sub").textContent = "Suchkriterien";
+
+  if (cfgState.loading) { root.append(h("div", { class: "empty" }, "Lade …")); return; }
+
+  if (cfgState.cfg) {
+    const cfg = cfgState.cfg;
+    root.append(h("div", { class: "panel" },
+      h("h2", {}, "Plattformen"),
+      ["willhaben", "vinted"].map(p => h("label", { class: "check" },
+        h("input", { type: "checkbox", "data-platform": p, checked: (cfg.platforms || []).includes(p) }), PLATFORM_LABEL[p]))));
+    const list = h("div", { id: "search-list" }, (cfg.searches || []).map(searchCard));
+    root.append(list);
+    root.append(h("div", { class: "btns" },
+      h("button", { class: "btn sec", type: "button", onclick: () => list.append(searchCard({ name: "", keywords: [], title_contains_any: [], exclude: [], min_price: null, max_price: null })) }, "+ Suche hinzufügen"),
+      h("button", { class: "btn", type: "button", id: "save", onclick: saveCfg }, "Speichern")));
+    root.append(h("div", { class: "status", id: "cfg-status" }));
+    root.append(h("p", { class: "hint" }, "Neue oder umbenannte Suchen und Suchbegriffe merken sich beim ersten Lauf nur den aktuellen Bestand, du bekommst dafür keine Pushes zu alten Anzeigen."));
+  } else {
+    root.append(h("div", { class: "status", id: "cfg-status" }));
+  }
+
+  const hasRepo = !!repoPath();
+  root.append(h("div", { class: "panel" },
+    h("h2", {}, "Zugang zu GitHub"),
+    h("p", { class: "hint" }, store.get("token") ? "Ein Token ist auf diesem Gerät gespeichert." : "Zum Ändern der Suchen braucht die App einmalig einen Token. Er bleibt nur auf diesem Gerät."),
+    hasRepo && !store.get("repo") ? null : h("div", {}, h("label", {}, "Repository (Benutzername/Repo)"),
+      h("input", { type: "text", id: "repo", value: store.get("repo") || "", placeholder: "Name/Deal-Alert", autocapitalize: "none", autocorrect: "off", spellcheck: "false" })),
+    h("label", {}, "Token"),
+    h("input", { type: "password", id: "token", placeholder: store.get("token") ? "•••••••• (gespeichert)" : "github_pat_…", autocomplete: "off" }),
+    h("div", { class: "btns" },
+      h("button", { class: "btn", type: "button", onclick: () => {
+        const t = $("#token").value.trim();
+        const r = $("#repo") ? $("#repo").value.trim() : "";
+        if (t) store.set("token", t);
+        if (r) store.set("repo", r);
+        loadCfg();
+      } }, "Speichern & laden"),
+      store.get("token") ? h("button", { class: "btn sec", type: "button", onclick: () => { store.del("token"); renderCfg(); } }, "Token entfernen") : null),
+    h("details", { style: "margin-top:12px" },
+      h("summary", {}, "Wie bekomme ich einen Token?"),
+      h("ol", { class: "hint" },
+        h("li", {}, "Auf github.com anmelden, Profilbild → Settings → ganz unten Developer settings."),
+        h("li", {}, "Personal access tokens → Fine-grained tokens → Generate new token."),
+        h("li", {}, "Repository access: „Only select repositories“ und nur Deal-Alert wählen."),
+        h("li", {}, "Permissions → Repository permissions → Contents: „Read and write“."),
+        h("li", {}, "Ablaufdatum z. B. 90 Tage, dann „Generate token“, kopieren und oben einfügen.")))));
+}
+
+/* --------------------------------------------------------------------- UI */
+
+function show(tab) {
+  const list = tab === "list";
+  $("#view-list").hidden = !list;
+  $("#view-cfg").hidden = list;
+  $("#tab-list").setAttribute("aria-selected", String(list));
+  $("#tab-cfg").setAttribute("aria-selected", String(!list));
+  $("#refresh").hidden = !list;
+  if (list) { renderListings(); }
+  else if (!cfgState.cfg && !cfgState.loading) { loadCfg(); }
+  else { renderCfg(); }
+  window.scrollTo(0, 0);
+}
+
+$("#tab-list").addEventListener("click", () => show("list"));
+$("#tab-cfg").addEventListener("click", () => show("cfg"));
+$("#refresh").addEventListener("click", loadListings);
+
+function markVisit() { store.set("lastVisit", String(Date.now())); }
+window.addEventListener("pagehide", markVisit);
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") markVisit();
+  else if (!$("#view-list").hidden) loadListings();
+});
+setInterval(() => { if (document.visibilityState === "visible" && !$("#view-list").hidden) loadListings(); }, 60000);
+
+loadListings();
+</script>
+</body>
+</html>
