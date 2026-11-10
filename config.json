@@ -41,7 +41,7 @@
       ],
       "title_contains_any": [],
       "exclude": [],
-      "min_price": null,
+      "min_price": 30,
       "max_price": 80
     },
     {
