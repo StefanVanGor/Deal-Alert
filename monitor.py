@@ -163,6 +163,13 @@ def fetch_vinted(keyword: str, search: dict, cfg: dict) -> list[dict]:
         params["price_to"] = str(search["max_price"])
     if search.get("min_price") is not None:
         params["price_from"] = str(search["min_price"])
+    # Vinted-Kategorie aus der gespeicherten Suche (catalog[]= in der Vinted-URL).
+    catalog_ids = search.get("vinted_catalog_ids")
+    if catalog_ids:
+        if isinstance(catalog_ids, (list, tuple)):
+            params["catalog_ids"] = ",".join(str(x) for x in catalog_ids)
+        else:
+            params["catalog_ids"] = str(catalog_ids)
     url = f"https://api.{api_domain}/svc-catalogue/items?" + urllib.parse.urlencode(params)
 
     body = http_get(
