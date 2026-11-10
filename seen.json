@@ -605,6 +605,17 @@
    "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-dsl-stylus-charger-2066871188/"
   },
   {
+   "extra": "Frauental an der Laßnitz",
+   "found_at": "2026-11-10T15:44:26+00:00",
+   "id": "974722066",
+   "paylivery": true,
+   "platform": "willhaben",
+   "price": 75.0,
+   "search": "Nintendo Switch",
+   "title": "nintendo switch",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-974722066/"
+  },
+  {
    "extra": "Sankt Leonhard",
    "found_at": "2026-11-10T13:53:34+00:00",
    "id": "1016272258",
@@ -1230,17 +1241,6 @@
    "search": "Nintendo Switch",
    "title": "Nintendo Switch Racing Wheel",
    "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-racing-wheel-1356599850/"
-  },
-  {
-   "extra": "Terfens",
-   "found_at": "2026-11-10T15:27:25+00:00",
-   "id": "2032104039",
-   "paylivery": true,
-   "platform": "willhaben",
-   "price": 35.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch 2 Kamera",
-   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-2-kamera-2032104039/"
   },
   {
    "extra": "Wien, 22. Bezirk, Donaustadt",
@@ -3267,7 +3267,8 @@
    "1468207044",
    "928338069",
    "1356599850",
-   "2032104039"
+   "2032104039",
+   "974722066"
   ],
   "willhaben:Pokemon Karten": [
    "1485903807",
