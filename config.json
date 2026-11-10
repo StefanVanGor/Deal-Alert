@@ -14,22 +14,8 @@
         "advance",
         "sp"
       ],
-      "title_contains_any": [
-        "konsole",
-        "console",
-        "color",
-        "advance",
-        "pocket",
-        "classic",
-        "dmg",
-        "micro",
-        "gbc",
-        "gba sp",
-        "handheld"
-      ],
-      "exclude": [
-        "nur spiel"
-      ],
+      "title_contains_any": [],
+      "exclude": [],
       "min_price": 30,
       "max_price": 60
     },
