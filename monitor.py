@@ -45,8 +45,12 @@ def http_get(url, opener=None, headers=None) -> str:
     h.update(headers or {})
     req = urllib.request.Request(url, headers=h)
     opener = opener or urllib.request.build_opener()
-    with opener.open(req, timeout=30) as resp:
-        return resp.read().decode("utf-8", errors="replace")
+    try:
+        with opener.open(req, timeout=30) as resp:
+            return resp.read().decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as e:
+        snippet = e.read()[:300].decode("utf-8", errors="replace").replace("\n", " ")
+        raise RuntimeError(f"HTTP {e.code} bei {url} -> {snippet}") from None
 
 
 def to_float(v):
