@@ -62,7 +62,7 @@ ol{padding-left:20px;margin:8px 0}
 </head>
 <body>
 <header>
-  <div class="row"><h1>Deal-Alert</h1><button class="icon-btn" id="refresh" aria-label="Aktualisieren">⟳</button></div>
+  <div class="row"><h1>Deal-Alert</h1><div class="btns" style="margin:0;align-items:center"><button class="btn" id="manual-run" type="button">Jetzt suchen</button><button class="icon-btn" id="refresh" aria-label="Aktualisieren">⟳</button></div></div>
   <div class="sub" id="sub"></div>
   <div class="sub" id="run"></div>
 </header>
@@ -189,6 +189,31 @@ let runInfo = null;
 let runFetchedAt = 0;
 const STALE_MIN = 45;
 
+async function startManualRun() {
+  const btn = $("#manual-run");
+  if (!btn || btn.disabled) return;
+  btn.disabled = true;
+  const oldText = btn.textContent;
+  btn.textContent = "Starte …";
+  try {
+    await gh("/actions/workflows/check.yml/dispatches", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ref: "main" }),
+    });
+    runInfo = { at: new Date().toISOString(), status: "queued", conclusion: null };
+    renderRun();
+    $("#run").textContent = "Suchlauf wurde gestartet · GitHub Actions übernimmt in Kürze.";
+    setTimeout(() => loadRun(true), 5000);
+  } catch (e) {
+    $("#run").className = "sub err";
+    $("#run").textContent = "Manueller Suchlauf fehlgeschlagen: " + e.message;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = oldText;
+  }
+}
+
 async function loadRun(force) {
   if (!force && Date.now() - runFetchedAt < 120000) { renderRun(); return; }
   runFetchedAt = Date.now();
@@ -262,6 +287,7 @@ async function gh(path, opts = {}) {
     err.status = r.status;
     throw err;
   }
+  if (r.status === 204) return null;
   return r.json();
 }
 
@@ -418,6 +444,7 @@ function show(tab) {
   $("#tab-list").setAttribute("aria-selected", String(list));
   $("#tab-cfg").setAttribute("aria-selected", String(!list));
   $("#refresh").hidden = !list;
+  $("#manual-run").hidden = !list;
   $("#run").hidden = !list;
   if (list) { renderListings(); }
   else if (!cfgState.cfg && !cfgState.loading) { loadCfg(); }
@@ -428,6 +455,7 @@ function show(tab) {
 $("#tab-list").addEventListener("click", () => show("list"));
 $("#tab-cfg").addEventListener("click", () => show("cfg"));
 $("#refresh").addEventListener("click", () => { loadListings(); loadRun(true); });
+$("#manual-run").addEventListener("click", startManualRun);
 
 function markVisit() { store.set("lastVisit", String(Date.now())); }
 window.addEventListener("pagehide", markVisit);
