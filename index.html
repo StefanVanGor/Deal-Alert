@@ -167,7 +167,9 @@ function renderListings() {
       h("button", { class: "chip", "aria-pressed": String(n === filter), onclick: () => { filter = n; renderListings(); } }, n))));
   }
 
-  const shown = visibleListings.filter(l => filter === "Alle" || l.search === filter);
+  const shown = visibleListings
+    .filter(l => filter === "Alle" || l.search === filter)
+    .sort((a, b) => Date.parse(b.found_at || 0) - Date.parse(a.found_at || 0));
   if (loadError) root.append(h("div", { class: "status err" }, "Daten konnten nicht geladen werden: " + loadError));
   if (!shown.length && !loadError) {
     root.append(h("div", { class: "empty" }, "Noch keine neuen Treffer. Sobald das Skript eine passende neue Anzeige findet, erscheint sie hier."));
