@@ -241,21 +241,21 @@ async function loadRun(force) {
   if (!force && Date.now() - runFetchedAt < 120000) { renderRun(); return; }
   runFetchedAt = Date.now();
   try {
-    const d = await gh("/actions/workflows/check.yml/runs?per_page=30");
+    const d = await gh("/actions/workflows/check.yml/runs?per_page=100");
     const runs = d.workflow_runs || [];
     const automatic = runs.find(r => r.event === "schedule");
     const manual = runs.find(r => r.event === "workflow_dispatch");
-    const foundManual = summarizeRun(manual);
-    if (!foundManual && optimisticManualRun &&
-        Date.now() - Date.parse(optimisticManualRun.at) < 120000) {
-      runInfo = { automatic: summarizeRun(automatic), manual: optimisticManualRun };
+    let foundManual = summarizeRun(manual);
+    if (optimisticManualRun && Date.now() - Date.parse(optimisticManualRun.at) < 120000 &&
+        (!foundManual || Date.parse(foundManual.at) < Date.parse(optimisticManualRun.at))) {
+      foundManual = optimisticManualRun;
     } else {
       optimisticManualRun = null;
-      runInfo = {
-        automatic: summarizeRun(automatic),
-        manual: foundManual
-      };
     }
+    runInfo = {
+      automatic: summarizeRun(automatic),
+      manual: foundManual
+    };
   } catch (e) {
     runInfo = { error: String(e.message || e) };
   }
