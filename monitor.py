@@ -94,9 +94,16 @@ def fetch_willhaben(keyword: str, search: dict, cfg: dict) -> list[dict]:
         ad_id = str(ad.get("id") or a.get("ADID") or "")
         if not ad_id:
             continue
-        seo = a.get("SEO_URL")
-        link = ("https://www.willhaben.at/" + seo.lstrip("/")) if seo else \
-            f"https://www.willhaben.at/iad/object?adId={ad_id}"
+        seo = (a.get("SEO_URL") or "").strip()
+        if seo.startswith("http"):
+            link = seo
+        elif seo:
+            seo = seo.lstrip("/")
+            if not seo.startswith("iad/"):
+                seo = "iad/" + seo
+            link = "https://www.willhaben.at/" + seo
+        else:
+            link = f"https://www.willhaben.at/iad/object?adId={ad_id}"
         items.append({
             "platform": "willhaben",
             "id": ad_id,
