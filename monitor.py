@@ -127,51 +127,101 @@ _openers: dict = {}
 
 
 def vinted_opener(domain: str):
-    """Vinted verlangt Session-Cookies; die gibt es beim Aufruf der Startseite."""
+    """Initialisiert eine anonyme Vinted-Websession und hält deren Cookies."""
     if domain not in _openers:
-        op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
-        http_get(f"https://{domain}/", opener=op)
-        _openers[domain] = op
+        jar = http.cookiejar.CookieJar()
+        op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
+        # Vinted stellt die benötigten anonymen Session-Cookies bereits auf HEAD aus.
+        req = urllib.request.Request(f"https://{domain}/", headers={"User-Agent": USER_AGENT}, method="HEAD")
+        try:
+            with op.open(req, timeout=30):
+                pass
+        except urllib.error.HTTPError as e:
+            raise RuntimeError(f"Vinted Session-Start fehlgeschlagen: HTTP {e.code}") from None
+        cookies = {c.name: c.value for c in jar}
+        if not cookies.get("access_token_web") or not cookies.get("anon_id"):
+            # Manche Regionen liefern Cookies erst bei einem normalen Seitenaufruf.
+            http_get(f"https://{domain}/", opener=op)
+            cookies = {c.name: c.value for c in jar}
+        if not cookies.get("access_token_web") or not cookies.get("anon_id"):
+            raise RuntimeError("Vinted: Session-Cookies access_token_web/anon_id fehlen")
+        _openers[domain] = (op, cookies)
     return _openers[domain]
 
 
 def fetch_vinted(keyword: str, search: dict, cfg: dict) -> list[dict]:
     domain = cfg.get("vinted_domain", "www.vinted.at")
-    params = {"search_text": keyword, "order": "newest_first", "per_page": "30", "page": "1"}
+    op, cookies = vinted_opener(domain)
+    api_domain = domain.removeprefix("www.")
+    params = {
+        "search_text": keyword,
+        "order": "newest_first",
+        "per_page": "24",
+        "page": "1",
+    }
     if search.get("max_price") is not None:
         params["price_to"] = str(search["max_price"])
     if search.get("min_price") is not None:
         params["price_from"] = str(search["min_price"])
-    url = f"https://{domain}/api/v2/catalog/items?" + urllib.parse.urlencode(params)
+    url = f"https://api.{api_domain}/svc-catalogue/items?" + urllib.parse.urlencode(params)
 
     body = http_get(
         url,
-        opener=vinted_opener(domain),
-        headers={"Accept": "application/json, text/plain, */*", "Referer": f"https://{domain}/catalog"},
+        opener=op,
+        headers={
+            "Accept": "application/json, text/plain, */*",
+            "Authorization": "Bearer " + cookies["access_token_web"],
+            "x-anon-id": cookies["anon_id"],
+            "Locale": "de-AT",
+            "Referer": f"https://{domain}/catalog",
+            "Origin": f"https://{domain}",
+        },
     )
     try:
         data = json.loads(body)
     except ValueError:
-        raise RuntimeError("Vinted: keine JSON-Antwort (vermutlich blockiert)")
-    if not isinstance(data, dict) or "items" not in data:
+        raise RuntimeError("Vinted: keine JSON-Antwort (neuer Katalog-Endpunkt blockiert?)")
+    if not isinstance(data, dict):
         raise RuntimeError("Vinted: unerwartete Antwort")
+    raw_items = data.get("items")
+    if raw_items is None:
+        # Die neue Schnittstelle kann Treffer auch unter catalog_items liefern.
+        raw_items = data.get("catalog_items")
+    if not isinstance(raw_items, list):
+        detail = data.get("message") or data.get("error") or data.get("code") or "items-Feld fehlt"
+        raise RuntimeError(f"Vinted: unerwartete API-Antwort ({detail})")
 
     items = []
-    for it in data["items"]:
+    for it in raw_items:
+        if not isinstance(it, dict):
+            continue
         price = it.get("price")
         if isinstance(price, dict):
             price = price.get("amount")
-        extra = " · ".join(x for x in (it.get("brand_title"), it.get("size_title"), it.get("status")) if x)
+        box = it.get("item_box") or {}
+        title = (it.get("title") or "").strip()
+        first_line = (box.get("first_line") or "").strip()
+        second_line = (box.get("second_line") or "").strip()
+        extra_parts = []
+        if first_line and first_line.lower() != title.lower():
+            extra_parts.append(first_line)
+        if second_line:
+            extra_parts.append(second_line)
+        item_id = it.get("id")
+        if not item_id:
+            continue
+        link = it.get("url") or f"https://{domain}/items/{item_id}"
+        if link.startswith("/"):
+            link = f"https://{domain}{link}"
         items.append({
             "platform": "vinted",
-            "id": str(it.get("id")),
-            "title": (it.get("title") or "").strip(),
+            "id": str(item_id),
+            "title": title,
             "price": to_float(price),
-            "extra": extra,
-            "url": it.get("url") or f"https://{domain}/items/{it.get('id')}",
+            "extra": " · ".join(extra_parts),
+            "url": link,
         })
     return items
-
 
 FETCHERS = {"willhaben": fetch_willhaben, "vinted": fetch_vinted}
 
