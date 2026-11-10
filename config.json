@@ -1,26 +1,43 @@
 {
-  "platforms": ["willhaben"],
+  "platforms": [
+    "willhaben"
+  ],
   "vinted_domain": "www.vinted.at",
   "searches": [
     {
       "name": "Game Boy",
-      "keywords": ["game boy", "gameboy", "gba"],
-      "title_contains_any": ["game boy", "gameboy", "gba", "gbc"],
+      "keywords": [
+        "game boy",
+        "gameboy",
+        "gba"
+      ],
+      "title_contains_any": [
+        "game boy",
+        "gameboy",
+        "gba",
+        "gbc"
+      ],
       "exclude": [],
       "min_price": null,
       "max_price": null
     },
     {
       "name": "Nintendo Switch",
-      "keywords": ["nintendo switch"],
-      "title_contains_any": ["switch"],
+      "keywords": [
+        "nintendo switch"
+      ],
+      "title_contains_any": [
+        "switch"
+      ],
       "exclude": [],
       "min_price": null,
       "max_price": null
     },
     {
       "name": "Nintendo Konsolen",
-      "keywords": ["nintendo konsole"],
+      "keywords": [
+        "nintendo konsole"
+      ],
       "title_contains_any": [],
       "exclude": [],
       "min_price": null,
