@@ -43,20 +43,6 @@
       "exclude": [],
       "min_price": 30,
       "max_price": 80
-    },
-    {
-      "name": "Pokemon Karten",
-      "keywords": [
-        "pokemon karte",
-        "pokemon psa",
-        "alte karten",
-        "retro karten",
-        "booster"
-      ],
-      "title_contains_any": [],
-      "exclude": [],
-      "min_price": null,
-      "max_price": null
     }
   ]
 }
