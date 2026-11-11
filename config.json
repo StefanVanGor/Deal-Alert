@@ -14,7 +14,11 @@
         "advance"
       ],
       "category_path": "konsolen-2786",
-      "title_contains_any": [],
+      "title_contains_any": [
+        "defekt",
+        "funktioniert nicht",
+        "kaputt"
+      ],
       "exclude": [],
       "min_price": 20,
       "max_price": 60
