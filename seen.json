@@ -894,18 +894,6 @@
   },
   {
    "buyer_protection": false,
-   "extra": "Burgkirchen",
-   "found_at": "2026-11-11T20:58:16+00:00",
-   "id": "1507021132",
-   "paylivery": true,
-   "platform": "willhaben",
-   "price": 25.0,
-   "search": "Einhell",
-   "title": "Akku Schlagbohrmaschine",
-   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/akku-schlagbohrmaschine-1507021132/"
-  },
-  {
-   "buyer_protection": false,
    "extra": "Sankt Peter am Ottersbach",
    "found_at": "2026-11-11T20:58:16+00:00",
    "id": "932874807",
@@ -1589,16 +1577,28 @@
    "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/akku-und-ladegeraet-874744340/"
   },
   {
+   "buyer_protection": false,
+   "extra": "Haslach an der Mühl",
+   "found_at": "2026-11-12T05:34:17+00:00",
+   "id": "1690576873",
+   "paylivery": true,
+   "platform": "willhaben",
+   "price": 90.0,
+   "search": "Einhell",
+   "title": "2x Einhell Akkuschrauben",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/2x-einhell-akkuschrauben-1690576873/"
+  },
+  {
    "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-12T04:33:07+00:00",
-   "id": "10773422090",
+   "extra": "Super Mario · Einheitsgröße · Sehr gut",
+   "found_at": "2026-11-12T05:34:17+00:00",
+   "id": "10773639640",
    "paylivery": false,
    "platform": "vinted",
-   "price": 30.0,
+   "price": 45.0,
    "search": "Nintendo Switch",
-   "title": "Super Mario 3D World Bowser Fury Nintendo Switch 1&2",
-   "url": "https://www.vinted.at/items/10773422090-super-mario-3d-world-bowser-fury-nintendo-switch-12"
+   "title": "Nintendo Official Banpresto Super Mario Bros NES Plush Block",
+   "url": "https://www.vinted.at/items/10773639640-nintendo-official-banpresto-super-mario-bros-nes-plush-block"
   },
   {
    "buyer_protection": true,
@@ -1611,6 +1611,18 @@
    "search": "Nintendo Switch",
    "title": "Nintendo swich",
    "url": "https://www.vinted.at/items/10773258747-nintendo-swich"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-12T04:33:07+00:00",
+   "id": "10773422090",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 30.0,
+   "search": "Nintendo Switch",
+   "title": "Super Mario 3D World Bowser Fury Nintendo Switch 1&2",
+   "url": "https://www.vinted.at/items/10773422090-super-mario-3d-world-bowser-fury-nintendo-switch-12"
   },
   {
    "buyer_protection": true,
@@ -1650,18 +1662,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Neu, mit Etikett",
-   "found_at": "2026-11-12T03:33:57+00:00",
-   "id": "10773239766",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 70.0,
-   "search": "Nintendo Switch",
-   "title": "The Legend of Zelda : Ocarina of Time Nintendo Switch 2",
-   "url": "https://www.vinted.at/items/10773239766-the-legend-of-zelda-ocarina-of-time-nintendo-switch-2"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-12T01:54:56+00:00",
    "id": "10772640515",
@@ -1683,6 +1683,18 @@
    "search": "Nintendo Switch",
    "title": "Nintendo switch lite",
    "url": "https://www.vinted.at/items/10772479674-nintendo-switch-lite"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Neu, mit Etikett",
+   "found_at": "2026-11-12T03:33:57+00:00",
+   "id": "10773239766",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 70.0,
+   "search": "Nintendo Switch",
+   "title": "The Legend of Zelda : Ocarina of Time Nintendo Switch 2",
+   "url": "https://www.vinted.at/items/10773239766-the-legend-of-zelda-ocarina-of-time-nintendo-switch-2"
   },
   {
    "buyer_protection": true,
@@ -1710,18 +1722,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-12T01:54:56+00:00",
-   "id": "10772949749",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "Jeu Nintendo switch",
-   "url": "https://www.vinted.at/items/10772949749-jeu-nintendo-switch"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Neu, ohne Etikett",
    "found_at": "2026-11-11T23:38:53+00:00",
    "id": "10771863729",
@@ -1734,18 +1734,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-12T00:36:13+00:00",
-   "id": "10772530548",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 59.0,
-   "search": "Nintendo Switch",
-   "title": "Exemplaire 100% Neuf - Pochette Zelda 40 ans Sacoche Collector Switch 2 Triforce Nintendo",
-   "url": "https://www.vinted.at/items/10772530548-exemplaire-100-neuf-pochette-zelda-40-ans-sacoche-collector-switch-2-triforce-nintendo"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-12T00:36:13+00:00",
    "id": "10771657951",
@@ -1755,18 +1743,6 @@
    "search": "Nintendo Switch",
    "title": "Nintendo switch v1 console seule",
    "url": "https://www.vinted.at/items/10771657951-nintendo-switch-v1-console-seule"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-12T01:54:56+00:00",
-   "id": "10772902699",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "Pack complet Nintendo Switch Sports",
-   "url": "https://www.vinted.at/items/10772902699-pack-complet-nintendo-switch-sports"
   },
   {
    "buyer_protection": true,
@@ -1842,18 +1818,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Zufriedenstellend",
-   "found_at": "2026-11-11T19:28:44+00:00",
-   "id": "10769116323",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 70.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch Lite",
-   "url": "https://www.vinted.at/items/10769116323-nintendo-switch-lite"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-12T04:33:07+00:00",
    "id": "10768232408",
@@ -1878,6 +1842,18 @@
   },
   {
    "buyer_protection": true,
+   "extra": "Nintendo · Zufriedenstellend",
+   "found_at": "2026-11-11T19:28:44+00:00",
+   "id": "10769116323",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 70.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo Switch Lite",
+   "url": "https://www.vinted.at/items/10769116323-nintendo-switch-lite"
+  },
+  {
+   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-11T20:58:16+00:00",
    "id": "10769890825",
@@ -1887,6 +1863,18 @@
    "search": "Nintendo Switch",
    "title": "Nitendo switch lite",
    "url": "https://www.vinted.at/items/10769890825-nitendo-switch-lite"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-12T05:34:17+00:00",
+   "id": "10769683882",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 30.0,
+   "search": "Nintendo Switch",
+   "title": "Dock animal crossing switch",
+   "url": "https://www.vinted.at/items/10769683882-dock-animal-crossing-switch"
   },
   {
    "buyer_protection": true,
@@ -1986,30 +1974,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "PlayStation · Neu, mit Etikett",
-   "found_at": "2026-11-11T23:38:53+00:00",
-   "id": "10771987431",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 45.0,
-   "search": "Nintendo Switch",
-   "title": "Le lot",
-   "url": "https://www.vinted.at/items/10771987431-le-lot"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-12T00:36:13+00:00",
-   "id": "10772467861",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 80.0,
-   "search": "Nintendo Switch",
-   "title": "Jeu Nintendo switch lite",
-   "url": "https://www.vinted.at/items/10772467861-jeu-nintendo-switch-lite"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Gut",
    "found_at": "2026-11-11T20:58:16+00:00",
    "id": "10756460704",
@@ -2019,6 +1983,18 @@
    "search": "Nintendo Switch",
    "title": "Nintendo Switch Light HS",
    "url": "https://www.vinted.at/items/10756460704-nintendo-switch-light-hs"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "PlayStation · Neu, mit Etikett",
+   "found_at": "2026-11-11T23:38:53+00:00",
+   "id": "10771987431",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 45.0,
+   "search": "Nintendo Switch",
+   "title": "Le lot",
+   "url": "https://www.vinted.at/items/10771987431-le-lot"
   },
   {
    "buyer_protection": true,
@@ -2094,15 +2070,27 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Einhell · Neu, ohne Etikett",
-   "found_at": "2026-11-11T23:38:53+00:00",
-   "id": "10771906575",
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-12T05:34:17+00:00",
+   "id": "10765683556",
    "paylivery": false,
    "platform": "vinted",
-   "price": 6.0,
+   "price": 80.0,
+   "search": "Nintendo Switch",
+   "title": "Switch Lite jaune",
+   "url": "https://www.vinted.at/items/10765683556-switch-lite-jaune"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Einhell · Neu, mit Etikett",
+   "found_at": "2026-11-12T05:34:17+00:00",
+   "id": "10773657285",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 14.0,
    "search": "Einhell",
-   "title": "Caricabatterie",
-   "url": "https://www.vinted.at/items/10771906575-caricabatterie"
+   "title": "Einhell 42 teile",
+   "url": "https://www.vinted.at/items/10773657285-einhell-42-teile"
   },
   {
    "buyer_protection": true,
@@ -2115,6 +2103,18 @@
    "search": "Einhell",
    "title": "Trapano Einhell con percussione",
    "url": "https://www.vinted.at/items/10771099063-trapano-einhell-con-percussione"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Einhell · Neu, ohne Etikett",
+   "found_at": "2026-11-11T23:38:53+00:00",
+   "id": "10771906575",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 6.0,
+   "search": "Einhell",
+   "title": "Caricabatterie",
+   "url": "https://www.vinted.at/items/10771906575-caricabatterie"
   },
   {
    "buyer_protection": true,
@@ -2178,18 +2178,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Einhell · Neu, mit Etikett",
-   "found_at": "2026-11-11T20:58:16+00:00",
-   "id": "10769878660",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 25.0,
-   "search": "Einhell",
-   "title": "Einhell Farbfeinsprühgerät",
-   "url": "https://www.vinted.at/items/10769878660-einhell-farbfeinspruhgerat"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Einhell · Gut",
    "found_at": "2026-11-11T12:41:32+00:00",
    "id": "10760584136",
@@ -2199,6 +2187,18 @@
    "search": "Einhell",
    "title": "Trapano avvitatore",
    "url": "https://www.vinted.at/items/10760584136-trapano-avvitatore"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Einhell · Neu, mit Etikett",
+   "found_at": "2026-11-11T20:58:16+00:00",
+   "id": "10769878660",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 25.0,
+   "search": "Einhell",
+   "title": "Einhell Farbfeinsprühgerät",
+   "url": "https://www.vinted.at/items/10769878660-einhell-farbfeinspruhgerat"
   },
   {
    "buyer_protection": true,
@@ -2367,18 +2367,6 @@
    "search": "Einhell",
    "title": "Einhell PXC Starter Kit 18V 4.0 Ah - Batteria e Caricabatterie",
    "url": "https://www.vinted.at/items/10763383801-einhell-pxc-starter-kit-18v-40-ah-batteria-e-caricabatterie"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Einhell · Neu, mit Etikett",
-   "found_at": "2026-11-12T00:36:13+00:00",
-   "id": "10763356037",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 35.0,
-   "search": "Einhell",
-   "title": "Batteria einhell 4ah con caricatore",
-   "url": "https://www.vinted.at/items/10763356037-batteria-einhell-4ah-con-caricatore"
   }
  ],
  "seen": {
@@ -2485,7 +2473,8 @@
    "10769878660",
    "10771099063",
    "10771540659",
-   "10771906575"
+   "10771906575",
+   "10773657285"
   ],
   "vinted:Game Boy": [
    "10749831003",
@@ -3920,7 +3909,22 @@
    "10773284765",
    "10773571382",
    "10773559483",
-   "10773456541"
+   "10773456541",
+   "10773749194",
+   "10773736939",
+   "10773723765",
+   "10773664884",
+   "10773736153",
+   "10773728466",
+   "10773736107",
+   "10773716072",
+   "10773715063",
+   "10773707763",
+   "10773739768",
+   "10773683882",
+   "10773680981",
+   "10773653682",
+   "10773639640"
   ],
   "vinted:Nintendo Konsolen": [],
   "vinted:Nintendo Switch": [
@@ -4553,7 +4557,10 @@
    "10773323055",
    "10773239766",
    "10773422090",
-   "10768232408"
+   "10768232408",
+   "10773639640",
+   "10769683882",
+   "10765683556"
   ],
   "willhaben:Einhell": [
    "1600611078",
