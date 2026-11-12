@@ -41,10 +41,14 @@
         "Einhell"
       ],
       "category_path": "",
-      "title_contains_any": [],
+      "title_contains_any": [
+        "defekt",
+        "keine funktion",
+        "kaputt"
+      ],
       "exclude": [],
       "min_price": null,
-      "max_price": 100
+      "max_price": 40
     }
   ]
 }
