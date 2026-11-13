@@ -870,6 +870,42 @@
   },
   {
    "buyer_protection": true,
+   "extra": "Neu, ohne Etikett",
+   "found_at": "2026-11-13T06:00:11+00:00",
+   "id": "10787144030",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 40.0,
+   "search": "Nintendo Switch",
+   "title": "Magical craft jeu Nintendo Switch",
+   "url": "https://www.vinted.at/items/10787144030-magical-craft-jeu-nintendo-switch"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-13T06:00:11+00:00",
+   "id": "10787090574",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 30.0,
+   "search": "Nintendo Switch",
+   "title": "Pikmin 3 deluxe Nintendo switch",
+   "url": "https://www.vinted.at/items/10787090574-pikmin-3-deluxe-nintendo-switch"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-13T06:00:11+00:00",
+   "id": "10787075072",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 31.0,
+   "search": "Nintendo Switch",
+   "title": "Xenoblade Chronicles 3 - Nintendo Switch",
+   "url": "https://www.vinted.at/items/10787075072-xenoblade-chronicles-3-nintendo-switch"
+  },
+  {
+   "buyer_protection": true,
    "extra": "Gut",
    "found_at": "2026-11-13T05:02:08+00:00",
    "id": "10786931370",
@@ -942,18 +978,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-13T01:23:43+00:00",
-   "id": "10785980387",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "Lot 2 manette Nintendo switch édition Pokémon",
-   "url": "https://www.vinted.at/items/10785980387-lot-2-manette-nintendo-switch-edition-pokemon"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Gut",
    "found_at": "2026-11-12T22:46:38+00:00",
    "id": "10785014780",
@@ -975,18 +999,6 @@
    "search": "Nintendo Switch",
    "title": "Vendo accessori per Nintendo switch",
    "url": "https://www.vinted.at/items/10785013142-vendo-accessori-per-nintendo-switch"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-13T01:23:43+00:00",
-   "id": "10785842225",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo, switch, kit d’accessoires",
-   "url": "https://www.vinted.at/items/10785842225-nintendo-switch-kit-daccessoires"
   },
   {
    "buyer_protection": true,
@@ -1050,18 +1062,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-13T04:06:39+00:00",
-   "id": "10783018468",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 69.99,
-   "search": "Nintendo Switch",
-   "title": "Lot de 3 jeux switch avec une pochette",
-   "url": "https://www.vinted.at/items/10783018468-lot-de-3-jeux-switch-avec-une-pochette"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Gut",
    "found_at": "2026-11-13T04:06:39+00:00",
    "id": "10781491309",
@@ -1071,6 +1071,18 @@
    "search": "Nintendo Switch",
    "title": "Accessori nintendo switch",
    "url": "https://www.vinted.at/items/10781491309-accessori-nintendo-switch"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-13T04:06:39+00:00",
+   "id": "10783018468",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 69.99,
+   "search": "Nintendo Switch",
+   "title": "Lot de 3 jeux switch avec une pochette",
+   "url": "https://www.vinted.at/items/10783018468-lot-de-3-jeux-switch-avec-une-pochette"
   },
   {
    "buyer_protection": true,
@@ -1088,25 +1100,13 @@
    "buyer_protection": true,
    "extra": "Nintendo · Neu, mit Etikett",
    "found_at": "2026-11-13T01:23:43+00:00",
-   "id": "10785795434",
+   "id": "10785980387",
    "paylivery": false,
    "platform": "vinted",
    "price": 30.0,
    "search": "Nintendo Switch",
-   "title": "Controller per Nintendo",
-   "url": "https://www.vinted.at/items/10785795434-controller-per-nintendo"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-13T04:06:39+00:00",
-   "id": "10781551249",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 80.0,
-   "search": "Nintendo Switch",
-   "title": "Switch + dock",
-   "url": "https://www.vinted.at/items/10781551249-switch-dock"
+   "title": "Lot 2 manette Nintendo switch édition Pokémon",
+   "url": "https://www.vinted.at/items/10785980387-lot-2-manette-nintendo-switch-edition-pokemon"
   },
   {
    "buyer_protection": true,
@@ -1123,6 +1123,30 @@
   {
    "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-13T04:06:39+00:00",
+   "id": "10781551249",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 80.0,
+   "search": "Nintendo Switch",
+   "title": "Switch + dock",
+   "url": "https://www.vinted.at/items/10781551249-switch-dock"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Neu, mit Etikett",
+   "found_at": "2026-11-13T01:23:43+00:00",
+   "id": "10785842225",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 30.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo, switch, kit d’accessoires",
+   "url": "https://www.vinted.at/items/10785842225-nintendo-switch-kit-daccessoires"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-13T05:02:08+00:00",
    "id": "10779578173",
    "paylivery": false,
@@ -1131,30 +1155,6 @@
    "search": "Nintendo Switch",
    "title": "Nintendo switch",
    "url": "https://www.vinted.at/items/10779578173-nintendo-switch"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-13T05:02:08+00:00",
-   "id": "10779754861",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 70.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch Koffer/Case",
-   "url": "https://www.vinted.at/items/10779754861-nintendo-switch-koffercase"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-13T05:02:08+00:00",
-   "id": "10782636821",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 63.0,
-   "search": "Nintendo Switch",
-   "title": "X12 plus avec jeux intégré",
-   "url": "https://www.vinted.at/items/10782636821-x12-plus-avec-jeux-integre"
   },
   {
    "buyer_protection": true,
@@ -1314,18 +1314,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-13T01:23:43+00:00",
-   "id": "10762022053",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 34.99,
-   "search": "Nintendo Switch",
-   "title": "Controller Nintendo Switch 2 Super Mario Cablato",
-   "url": "https://www.vinted.at/items/10762022053-controller-nintendo-switch-2-super-mario-cablato"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Gut",
    "found_at": "2026-11-13T03:12:50+00:00",
    "id": "10765446365",
@@ -1335,6 +1323,18 @@
    "search": "Nintendo Switch",
    "title": "Nintendo Switch Lite bleue – Fonctionnelle – Coque abîmée",
    "url": "https://www.vinted.at/items/10765446365-nintendo-switch-lite-bleue-fonctionnelle-coque-abimee"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Neu, mit Etikett",
+   "found_at": "2026-11-13T01:23:43+00:00",
+   "id": "10762022053",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 34.99,
+   "search": "Nintendo Switch",
+   "title": "Controller Nintendo Switch 2 Super Mario Cablato",
+   "url": "https://www.vinted.at/items/10762022053-controller-nintendo-switch-2-super-mario-cablato"
   },
   {
    "buyer_protection": true,
@@ -1537,7 +1537,9 @@
    "10783197666",
    "10782960640",
    "10783519962",
-   "10783516131"
+   "10783516131",
+   "10771065614",
+   "10787063089"
   ],
   "vinted:Game Boy": [
    "10749831003",
@@ -3958,7 +3960,16 @@
    "10786976539",
    "10786937680",
    "10771376426",
-   "10786864660"
+   "10786864660",
+   "10787141912",
+   "10787139685",
+   "10787123641",
+   "10774341677",
+   "10787080360",
+   "10787121572",
+   "10787100455",
+   "10787091643",
+   "10787086475"
   ],
   "vinted:Nintendo Konsolen": [],
   "vinted:Nintendo Switch": [
@@ -5089,7 +5100,10 @@
    "10781491309",
    "10781551249",
    "10786931370",
-   "10779754861"
+   "10779754861",
+   "10787144030",
+   "10787090574",
+   "10787075072"
   ],
   "willhaben:Einhell": [
    "1600611078",
@@ -5279,7 +5293,9 @@
    "1645343360",
    "795983847",
    "1821755724",
-   "1188554720"
+   "1188554720",
+   "1869358426",
+   "885777231"
   ],
   "willhaben:Game Boy": [
    "1922559368",
