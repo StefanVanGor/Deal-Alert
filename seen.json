@@ -114,18 +114,6 @@
   },
   {
    "buyer_protection": false,
-   "extra": "St. Pölten",
-   "found_at": "2026-11-12T19:32:27+00:00",
-   "id": "1910752037",
-   "paylivery": true,
-   "platform": "willhaben",
-   "price": 80.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch Lite mit 9 Spiele, Tasche",
-   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/nintendo-switch-lite-mit-9-spiele-tasche-1910752037/"
-  },
-  {
-   "buyer_protection": false,
    "extra": "Buch",
    "found_at": "2026-11-12T18:33:26+00:00",
    "id": "1359972560",
@@ -774,6 +762,18 @@
   },
   {
    "buyer_protection": false,
+   "extra": "Mettmach",
+   "found_at": "2026-11-14T05:26:25+00:00",
+   "id": "1468207044",
+   "paylivery": true,
+   "platform": "willhaben",
+   "price": 50.0,
+   "search": "Nintendo Switch",
+   "title": "Lenkrad für Nintendo Switch",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/lenkrad-fuer-nintendo-switch-1468207044/"
+  },
+  {
+   "buyer_protection": false,
    "extra": "Tarrenz",
    "found_at": "2026-11-13T14:40:47+00:00",
    "id": "1787953507",
@@ -870,6 +870,42 @@
   },
   {
    "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-14T05:26:25+00:00",
+   "id": "10799970207",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 49.0,
+   "search": "Nintendo Switch",
+   "title": "Manette nintendo switch",
+   "url": "https://www.vinted.at/items/10799970207-manette-nintendo-switch"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-14T05:26:25+00:00",
+   "id": "10799948036",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 42.0,
+   "search": "Nintendo Switch",
+   "title": "Hyrule Warriors les chroniques du sceau Neuf Nintendo switch 2 AB prix ferme",
+   "url": "https://www.vinted.at/items/10799948036-hyrule-warriors-les-chroniques-du-sceau-neuf-nintendo-switch-2-ab-prix-ferme"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-14T05:26:25+00:00",
+   "id": "10799839906",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 80.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo switch lite turquoise",
+   "url": "https://www.vinted.at/items/10799839906-nintendo-switch-lite-turquoise"
+  },
+  {
+   "buyer_protection": true,
    "extra": "Sehr gut",
    "found_at": "2026-11-14T04:30:12+00:00",
    "id": "10799726145",
@@ -894,18 +930,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-14T02:52:09+00:00",
-   "id": "10799354061",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "Joy-Con Controller Set – Pastell Rosa & Mintgrün – Wireless – mit Handschlaufen",
-   "url": "https://www.vinted.at/items/10799354061-joy-con-controller-set-pastell-rosa-mintgrun-wireless-mit-handschlaufen"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Gut",
    "found_at": "2026-11-14T02:00:52+00:00",
    "id": "10799145366",
@@ -915,6 +939,18 @@
    "search": "Nintendo Switch",
    "title": "Nintendo Switch Lite - Isabelle Aloha Edition",
    "url": "https://www.vinted.at/items/10799145366-nintendo-switch-lite-isabelle-aloha-edition"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-14T02:52:09+00:00",
+   "id": "10799354061",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 30.0,
+   "search": "Nintendo Switch",
+   "title": "Joy-Con Controller Set – Pastell Rosa & Mintgrün – Wireless – mit Handschlaufen",
+   "url": "https://www.vinted.at/items/10799354061-joy-con-controller-set-pastell-rosa-mintgrun-wireless-mit-handschlaufen"
   },
   {
    "buyer_protection": true,
@@ -943,18 +979,6 @@
   {
    "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-13T22:44:34+00:00",
-   "id": "10798019329",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "connecteur de Nintendo siwtch pour la télé",
-   "url": "https://www.vinted.at/items/10798019329-connecteur-de-nintendo-siwtch-pour-la-tele"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-14T02:00:52+00:00",
    "id": "10797674211",
    "paylivery": false,
@@ -966,39 +990,15 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-14T00:58:33+00:00",
-   "id": "10798725743",
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-13T22:44:34+00:00",
+   "id": "10798019329",
    "paylivery": false,
    "platform": "vinted",
-   "price": 70.0,
+   "price": 30.0,
    "search": "Nintendo Switch",
-   "title": "Nintendo Switch 2 Joy-Con 2 – Original 2er-Set",
-   "url": "https://www.vinted.at/items/10798725743-nintendo-switch-2-joy-con-2-original-2er-set"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-14T00:58:33+00:00",
-   "id": "10798717993",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 40.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch 2 Joy-Con 2 Links – Hellblau",
-   "url": "https://www.vinted.at/items/10798717993-nintendo-switch-2-joy-con-2-links-hellblau"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-14T00:00:08+00:00",
-   "id": "10798709910",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 40.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch 2 Joy-Con 2 Rechts – Hellrot",
-   "url": "https://www.vinted.at/items/10798709910-nintendo-switch-2-joy-con-2-rechts-hellrot"
+   "title": "connecteur de Nintendo siwtch pour la télé",
+   "url": "https://www.vinted.at/items/10798019329-connecteur-de-nintendo-siwtch-pour-la-tele"
   },
   {
    "buyer_protection": true,
@@ -1015,18 +1015,6 @@
   {
    "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-14T02:00:52+00:00",
-   "id": "10797799798",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 45.0,
-   "search": "Nintendo Switch",
-   "title": "Accessoire switch + enceinte Bluetooth",
-   "url": "https://www.vinted.at/items/10797799798-accessoire-switch-enceinte-bluetooth"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-14T02:52:09+00:00",
    "id": "10796912285",
    "paylivery": false,
@@ -1035,6 +1023,18 @@
    "search": "Nintendo Switch",
    "title": "Schermo Originale Nintendo Switch Con Segnetti",
    "url": "https://www.vinted.at/items/10796912285-schermo-originale-nintendo-switch-con-segnetti"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-14T02:00:52+00:00",
+   "id": "10797799798",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 45.0,
+   "search": "Nintendo Switch",
+   "title": "Accessoire switch + enceinte Bluetooth",
+   "url": "https://www.vinted.at/items/10797799798-accessoire-switch-enceinte-bluetooth"
   },
   {
    "buyer_protection": true,
@@ -1050,18 +1050,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-14T03:36:15+00:00",
-   "id": "10796232030",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 48.0,
-   "search": "Nintendo Switch",
-   "title": "console switch à réparer",
-   "url": "https://www.vinted.at/items/10796232030-console-switch-a-reparer"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-13T20:17:55+00:00",
    "id": "10795276528",
@@ -1074,39 +1062,15 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-14T00:00:08+00:00",
-   "id": "10798699001",
+   "extra": "Nintendo · Gut",
+   "found_at": "2026-11-14T03:36:15+00:00",
+   "id": "10796232030",
    "paylivery": false,
    "platform": "vinted",
-   "price": 60.0,
+   "price": 48.0,
    "search": "Nintendo Switch",
-   "title": "Turtle Beach Rematch RGB Controller – Super Mario Rosalina",
-   "url": "https://www.vinted.at/items/10798699001-turtle-beach-rematch-rgb-controller-super-mario-rosalina"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-14T00:00:08+00:00",
-   "id": "10798567620",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch Joy-Con (Links) Weiß / Retro Color Buttons",
-   "url": "https://www.vinted.at/items/10798567620-nintendo-switch-joy-con-links-weiss-retro-color-buttons"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-14T00:00:08+00:00",
-   "id": "10798557768",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 45.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch Joy-Con (Rechts)  The Legend of Zelda Skyward Sword Edition",
-   "url": "https://www.vinted.at/items/10798557768-nintendo-switch-joy-con-rechts-the-legend-of-zelda-skyward-sword-edition"
+   "title": "console switch à réparer",
+   "url": "https://www.vinted.at/items/10796232030-console-switch-a-reparer"
   },
   {
    "buyer_protection": true,
@@ -1155,6 +1119,30 @@
    "search": "Nintendo Switch",
    "title": "Switch lite",
    "url": "https://www.vinted.at/items/10794799831-switch-lite"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-14T05:26:25+00:00",
+   "id": "10793667428",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 79.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo switch Fortnite + Dock",
+   "url": "https://www.vinted.at/items/10793667428-nintendo-switch-fortnite-dock"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Zufriedenstellend",
+   "found_at": "2026-11-14T05:26:25+00:00",
+   "id": "10794090094",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 70.0,
+   "search": "Nintendo Switch",
+   "title": "Console nintendo switch",
+   "url": "https://www.vinted.at/items/10794090094-console-nintendo-switch"
   },
   {
    "buyer_protection": true,
@@ -1218,18 +1206,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-13T21:58:36+00:00",
-   "id": "10797527086",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 64.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch Lite Turquoise",
-   "url": "https://www.vinted.at/items/10797527086-nintendo-switch-lite-turquoise"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-12T18:33:26+00:00",
    "id": "10781614840",
@@ -1251,6 +1227,18 @@
    "search": "Nintendo Switch",
    "title": "Nintendo Switch Lite",
    "url": "https://www.vinted.at/items/10781785377-nintendo-switch-lite"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-13T21:58:36+00:00",
+   "id": "10797527086",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 64.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo Switch Lite Turquoise",
+   "url": "https://www.vinted.at/items/10797527086-nintendo-switch-lite-turquoise"
   },
   {
    "buyer_protection": true,
@@ -1338,15 +1326,15 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-13T21:58:36+00:00",
-   "id": "10797517677",
+   "extra": "Nintendo · Neu, mit Etikett",
+   "found_at": "2026-11-14T00:00:08+00:00",
+   "id": "10781769306",
    "paylivery": false,
    "platform": "vinted",
-   "price": 31.0,
+   "price": 33.0,
    "search": "Nintendo Switch",
-   "title": "Pokémon Violet – Nintendo Switch | Jeu Pokémon",
-   "url": "https://www.vinted.at/items/10797517677-pokemon-violet-nintendo-switch-jeu-pokemon"
+   "title": "PowerA Nintendo Switch Controller Pikachu Camo Neu & OVP",
+   "url": "https://www.vinted.at/items/10781769306-powera-nintendo-switch-controller-pikachu-camo-neu-ovp"
   },
   {
    "buyer_protection": true,
@@ -1362,27 +1350,15 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-14T00:00:08+00:00",
-   "id": "10781769306",
+   "extra": "Sehr gut",
+   "found_at": "2026-11-13T21:58:36+00:00",
+   "id": "10797517677",
    "paylivery": false,
    "platform": "vinted",
-   "price": 33.0,
+   "price": 31.0,
    "search": "Nintendo Switch",
-   "title": "PowerA Nintendo Switch Controller Pikachu Camo Neu & OVP",
-   "url": "https://www.vinted.at/items/10781769306-powera-nintendo-switch-controller-pikachu-camo-neu-ovp"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Zufriedenstellend",
-   "found_at": "2026-11-14T00:00:08+00:00",
-   "id": "10769116323",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 70.0,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch Lite",
-   "url": "https://www.vinted.at/items/10769116323-nintendo-switch-lite"
+   "title": "Pokémon Violet – Nintendo Switch | Jeu Pokémon",
+   "url": "https://www.vinted.at/items/10797517677-pokemon-violet-nintendo-switch-jeu-pokemon"
   }
  ],
  "seen": {
@@ -1587,12 +1563,6 @@
    "10798442225"
   ],
   "vinted:Game Boy": [
-   "10754535617",
-   "10754527400",
-   "10754419453",
-   "10756633917",
-   "10756247581",
-   "10756126284",
    "10756453955",
    "10756153364",
    "10756426126",
@@ -4586,7 +4556,13 @@
    "10799300325",
    "10799634913",
    "10799536429",
-   "10799679550"
+   "10799679550",
+   "10799964643",
+   "10799888531",
+   "10799856648",
+   "10799846672",
+   "10799831196",
+   "10794555528"
   ],
   "vinted:Nintendo Konsolen": [],
   "vinted:Nintendo Switch": [
@@ -6194,7 +6170,11 @@
    "10799354061",
    "10799300325",
    "10799548844",
-   "10799726145"
+   "10799726145",
+   "10799970207",
+   "10799948036",
+   "10799839906",
+   "10793667428"
   ],
   "willhaben:Einhell": [
    "1600611078",
