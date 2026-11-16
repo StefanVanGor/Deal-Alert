@@ -858,6 +858,42 @@
   },
   {
    "buyer_protection": true,
+   "extra": "Neu, mit Etikett",
+   "found_at": "2026-11-16T05:09:10+00:00",
+   "id": "10834777173",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 39.0,
+   "search": "Nintendo Switch",
+   "title": "Jeu Nintendo switch dragon quest builders 2 neuf",
+   "url": "https://www.vinted.at/items/10834777173-jeu-nintendo-switch-dragon-quest-builders-2-neuf"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-16T05:09:10+00:00",
+   "id": "10834682162",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 30.0,
+   "search": "Nintendo Switch",
+   "title": "Mario Kart 8 Deluxe - Nintendo Switch (Cartouche seule / Version EUR)",
+   "url": "https://www.vinted.at/items/10834682162-mario-kart-8-deluxe-nintendo-switch-cartouche-seule-version-eur"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Neu, mit Etikett",
+   "found_at": "2026-11-16T05:09:10+00:00",
+   "id": "10834587624",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 80.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo Joy-Con 2 2er-Set Controller Hellviolett/Hellgrün für Nintendo Switch 2",
+   "url": "https://www.vinted.at/items/10834587624-nintendo-joy-con-2-2er-set-controller-hellvioletthellgrun-fur-nintendo-switch-2"
+  },
+  {
+   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-16T03:39:58+00:00",
    "id": "10834345849",
@@ -927,18 +963,6 @@
    "search": "Nintendo Switch",
    "title": "Nintendo Switch usata. Leggere Info",
    "url": "https://www.vinted.at/items/10832623097-nintendo-switch-usata-leggere-info"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-15T23:59:38+00:00",
-   "id": "10833299515",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 60.0,
-   "search": "Nintendo Switch",
-   "title": "Joy-Con Nintendo Switch 2",
-   "url": "https://www.vinted.at/items/10833299515-joy-con-nintendo-switch-2"
   },
   {
    "buyer_protection": true,
@@ -1014,18 +1038,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Neu, ohne Etikett",
-   "found_at": "2026-11-15T23:59:38+00:00",
-   "id": "10833080426",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 72.0,
-   "search": "Nintendo Switch",
-   "title": "Volant Mario kart - Nintendo switch",
-   "url": "https://www.vinted.at/items/10833080426-volant-mario-kart-nintendo-switch"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-16T02:32:20+00:00",
    "id": "10830908184",
@@ -1074,18 +1086,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Neu, ohne Etikett",
-   "found_at": "2026-11-15T23:59:38+00:00",
-   "id": "10833027869",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "Pochette console switch 2 mario",
-   "url": "https://www.vinted.at/items/10833027869-pochette-console-switch-2-mario"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Gut",
    "found_at": "2026-11-16T03:39:58+00:00",
    "id": "10830278593",
@@ -1131,18 +1131,6 @@
    "search": "Nintendo Switch",
    "title": "Switch",
    "url": "https://www.vinted.at/items/10830088451-switch"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-16T02:32:20+00:00",
-   "id": "10831131184",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 70.0,
-   "search": "Nintendo Switch",
-   "title": "Vendo Nintendo swich slim",
-   "url": "https://www.vinted.at/items/10831131184-vendo-nintendo-swich-slim"
   },
   {
    "buyer_protection": true,
@@ -1698,15 +1686,6 @@
    "10833306085"
   ],
   "vinted:Game Boy": [
-   "10789882691",
-   "10774623023",
-   "10789936369",
-   "10789934338",
-   "10789914260",
-   "10789751918",
-   "10789852669",
-   "10789834173",
-   "10790383182",
    "10790372781",
    "10790365401",
    "10790353006",
@@ -4697,7 +4676,16 @@
    "10820586313",
    "10834345849",
    "10834287214",
-   "10834237156"
+   "10834237156",
+   "10834796129",
+   "10834790162",
+   "10834711942",
+   "10834563830",
+   "10834560139",
+   "10834596020",
+   "10834592531",
+   "10817434322",
+   "10834561247"
   ],
   "vinted:Nintendo Konsolen": [],
   "vinted:Nintendo Switch": [
@@ -7497,7 +7485,10 @@
    "10834345849",
    "10834287214",
    "10834237156",
-   "10830088451"
+   "10830088451",
+   "10834777173",
+   "10834682162",
+   "10834587624"
   ],
   "willhaben:Einhell": [
    "1600611078",
@@ -7772,7 +7763,8 @@
    "1095136820",
    "961340101",
    "2131288154",
-   "1018831282"
+   "1018831282",
+   "1640557987"
   ],
   "willhaben:Game Boy": [
    "1922559368",
