@@ -14,11 +14,7 @@
         "advance"
       ],
       "category_path": "konsolen-2786",
-      "title_contains_any": [
-        "defekt",
-        "funktioniert nicht",
-        "kaputt"
-      ],
+      "title_contains_any": [],
       "exclude": [],
       "min_price": 20,
       "max_price": 60
@@ -30,7 +26,9 @@
         "switch lite"
       ],
       "category_path": "konsolen-2786",
-      "title_contains_any": [],
+      "title_contains_any": [
+        "lite"
+      ],
       "exclude": [],
       "min_price": 30,
       "max_price": 80
