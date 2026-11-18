@@ -41,11 +41,7 @@
         "Einhell"
       ],
       "category_path": "",
-      "title_contains_any": [
-        "defekt",
-        "keine funktion",
-        "kaputt"
-      ],
+      "title_contains_any": [],
       "exclude": [],
       "min_price": null,
       "max_price": 40
