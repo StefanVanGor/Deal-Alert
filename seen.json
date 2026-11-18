@@ -834,6 +834,18 @@
   },
   {
    "buyer_protection": true,
+   "extra": "Gut",
+   "found_at": "2026-11-18T03:37:59+00:00",
+   "id": "10862772060",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 70.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo Switch Spiel Super Mario 3D All Stars",
+   "url": "https://www.vinted.at/items/10862772060-nintendo-switch-spiel-super-mario-3d-all-stars"
+  },
+  {
+   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-18T02:38:00+00:00",
    "id": "10862382433",
@@ -870,66 +882,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Neu, mit Etikett",
-   "found_at": "2026-11-18T01:38:39+00:00",
-   "id": "10861947438",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "Fae Farm – Jeu Nintendo Switch – Neuf sous blister",
-   "url": "https://www.vinted.at/items/10861947438-fae-farm-jeu-nintendo-switch-neuf-sous-blister"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-18T01:38:39+00:00",
-   "id": "10861915128",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 37.99,
-   "search": "Nintendo Switch",
-   "title": "jeu FC 27 Nintendo Switch",
-   "url": "https://www.vinted.at/items/10861915128-jeu-fc-27-nintendo-switch"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-18T01:38:39+00:00",
-   "id": "10861870474",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "Luigi's Mansion 3 Nintendo Switch",
-   "url": "https://www.vinted.at/items/10861870474-luigis-mansion-3-nintendo-switch"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-18T01:38:39+00:00",
-   "id": "10861833263",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Nintendo Switch",
-   "title": "Mario Party Superstars – Nintendo Switch",
-   "url": "https://www.vinted.at/items/10861833263-mario-party-superstars-nintendo-switch"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-18T01:38:39+00:00",
-   "id": "10861790964",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 35.0,
-   "search": "Nintendo Switch",
-   "title": "Super Mario Party – Nintendo Switch",
-   "url": "https://www.vinted.at/items/10861790964-super-mario-party-nintendo-switch"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-17T23:25:49+00:00",
    "id": "10861074115",
@@ -939,54 +891,6 @@
    "search": "Nintendo Switch",
    "title": "Accessoires switch",
    "url": "https://www.vinted.at/items/10861074115-accessoires-switch"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-18T01:38:39+00:00",
-   "id": "10861770860",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 40.0,
-   "search": "Nintendo Switch",
-   "title": "Donkey Kong Country: Tropical Freeze – Nintendo Switch",
-   "url": "https://www.vinted.at/items/10861770860-donkey-kong-country-tropical-freeze-nintendo-switch"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-18T00:15:36+00:00",
-   "id": "10861733372",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 35.0,
-   "search": "Nintendo Switch",
-   "title": "Luigi’s Mansion 3 – Nintendo Switch",
-   "url": "https://www.vinted.at/items/10861733372-luigis-mansion-3-nintendo-switch"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-17T23:25:49+00:00",
-   "id": "10861326209",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 60.0,
-   "search": "Nintendo Switch",
-   "title": "Joycon switch 1 - violet orange",
-   "url": "https://www.vinted.at/items/10861326209-joycon-switch-1-violet-orange"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-17T23:25:49+00:00",
-   "id": "10861220320",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 50.0,
-   "search": "Nintendo Switch",
-   "title": "Controller nuovo",
-   "url": "https://www.vinted.at/items/10861220320-controller-nuovo"
   },
   {
    "buyer_protection": true,
@@ -1014,15 +918,15 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-17T23:25:49+00:00",
-   "id": "10861195491",
+   "extra": "Neu, mit Etikett",
+   "found_at": "2026-11-18T01:38:39+00:00",
+   "id": "10861947438",
    "paylivery": false,
    "platform": "vinted",
-   "price": 75.0,
+   "price": 30.0,
    "search": "Nintendo Switch",
-   "title": "Joy con switch 2",
-   "url": "https://www.vinted.at/items/10861195491-joy-con-switch-2"
+   "title": "Fae Farm – Jeu Nintendo Switch – Neuf sous blister",
+   "url": "https://www.vinted.at/items/10861947438-fae-farm-jeu-nintendo-switch-neuf-sous-blister"
   },
   {
    "buyer_protection": true,
@@ -1035,18 +939,6 @@
    "search": "Nintendo Switch",
    "title": "Dock Nintendo Switch + câble HDMI – Bon état",
    "url": "https://www.vinted.at/items/10859982597-dock-nintendo-switch-cable-hdmi-bon-etat"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-18T01:38:39+00:00",
-   "id": "10859731232",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 35.0,
-   "search": "Nintendo Switch",
-   "title": "Lot Console Nintendo Wii Noire avec Manette, Nunchuk, Accessoires & Jeux",
-   "url": "https://www.vinted.at/items/10859731232-lot-console-nintendo-wii-noire-avec-manette-nunchuk-accessoires-jeux"
   },
   {
    "buyer_protection": true,
@@ -1063,6 +955,18 @@
   {
    "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-18T01:38:39+00:00",
+   "id": "10859731232",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 35.0,
+   "search": "Nintendo Switch",
+   "title": "Lot Console Nintendo Wii Noire avec Manette, Nunchuk, Accessoires & Jeux",
+   "url": "https://www.vinted.at/items/10859731232-lot-console-nintendo-wii-noire-avec-manette-nunchuk-accessoires-jeux"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-18T02:38:00+00:00",
    "id": "10859688610",
    "paylivery": false,
@@ -1071,6 +975,42 @@
    "search": "Nintendo Switch",
    "title": "Lot Console Nintendo Wii Blanche avec Manettes, Jeux et Accessoires",
    "url": "https://www.vinted.at/items/10859688610-lot-console-nintendo-wii-blanche-avec-manettes-jeux-et-accessoires"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Neu, mit Etikett",
+   "found_at": "2026-11-17T23:25:49+00:00",
+   "id": "10861326209",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 60.0,
+   "search": "Nintendo Switch",
+   "title": "Joycon switch 1 - violet orange",
+   "url": "https://www.vinted.at/items/10861326209-joycon-switch-1-violet-orange"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-17T20:35:57+00:00",
+   "id": "10858983548",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 79.9,
+   "search": "Nintendo Switch",
+   "title": "Nintendo Switch Lite Console Di Gioco",
+   "url": "https://www.vinted.at/items/10858983548-nintendo-switch-lite-console-di-gioco"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-18T01:38:39+00:00",
+   "id": "10861915128",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 37.99,
+   "search": "Nintendo Switch",
+   "title": "jeu FC 27 Nintendo Switch",
+   "url": "https://www.vinted.at/items/10861915128-jeu-fc-27-nintendo-switch"
   },
   {
    "buyer_protection": true,
@@ -1087,18 +1027,6 @@
   {
    "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-17T20:35:57+00:00",
-   "id": "10858983548",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 79.9,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch Lite Console Di Gioco",
-   "url": "https://www.vinted.at/items/10858983548-nintendo-switch-lite-console-di-gioco"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-17T19:47:07+00:00",
    "id": "10858787346",
    "paylivery": false,
@@ -1110,15 +1038,39 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-18T01:38:39+00:00",
-   "id": "10860902077",
+   "extra": "Nintendo · Neu, mit Etikett",
+   "found_at": "2026-11-17T23:25:49+00:00",
+   "id": "10861220320",
    "paylivery": false,
    "platform": "vinted",
-   "price": 30.0,
+   "price": 50.0,
    "search": "Nintendo Switch",
-   "title": "Manière, et accessoire switch",
-   "url": "https://www.vinted.at/items/10860902077-maniere-et-accessoire-switch"
+   "title": "Controller nuovo",
+   "url": "https://www.vinted.at/items/10861220320-controller-nuovo"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Gut",
+   "found_at": "2026-11-18T03:37:59+00:00",
+   "id": "10857821985",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 76.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo switch",
+   "url": "https://www.vinted.at/items/10857821985-nintendo-switch"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Gut",
+   "found_at": "2026-11-18T03:37:59+00:00",
+   "id": "10858681013",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 80.0,
+   "search": "Nintendo Switch",
+   "title": "prezzo leggermente trattabile",
+   "url": "https://www.vinted.at/items/10858681013-prezzo-leggermente-trattabile"
   },
   {
    "buyer_protection": true,
@@ -1131,6 +1083,42 @@
    "search": "Nintendo Switch",
    "title": "Très Bon État (Prête À Jouer) - Nintendo Switch Lite Turquoise",
    "url": "https://www.vinted.at/items/10857894353-tres-bon-etat-prete-a-jouer-nintendo-switch-lite-turquoise"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-18T03:37:59+00:00",
+   "id": "10858441714",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 35.0,
+   "search": "Nintendo Switch",
+   "title": "Trousse + volant de switch",
+   "url": "https://www.vinted.at/items/10858441714-trousse-volant-de-switch"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-18T03:37:59+00:00",
+   "id": "10857426296",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 60.0,
+   "search": "Nintendo Switch",
+   "title": "Nintendo switch senza caricatore e senza custodia",
+   "url": "https://www.vinted.at/items/10857426296-nintendo-switch-senza-caricatore-e-senza-custodia"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-18T01:38:39+00:00",
+   "id": "10861870474",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 30.0,
+   "search": "Nintendo Switch",
+   "title": "Luigi's Mansion 3 Nintendo Switch",
+   "url": "https://www.vinted.at/items/10861870474-luigis-mansion-3-nintendo-switch"
   },
   {
    "buyer_protection": true,
@@ -1266,6 +1254,18 @@
   },
   {
    "buyer_protection": true,
+   "extra": "Nintendo · Gut",
+   "found_at": "2026-11-16T22:11:42+00:00",
+   "id": "10846688458",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 70.0,
+   "search": "Nintendo Switch",
+   "title": "Switch lite",
+   "url": "https://www.vinted.at/items/10846688458-switch-lite"
+  },
+  {
+   "buyer_protection": true,
    "extra": "Sony · Zufriedenstellend",
    "found_at": "2026-11-17T18:39:59+00:00",
    "id": "10857638521",
@@ -1290,18 +1290,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-16T22:11:42+00:00",
-   "id": "10846688458",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 70.0,
-   "search": "Nintendo Switch",
-   "title": "Switch lite",
-   "url": "https://www.vinted.at/items/10846688458-switch-lite"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Sehr gut",
    "found_at": "2026-11-17T17:47:43+00:00",
    "id": "10837588098",
@@ -1311,18 +1299,6 @@
    "search": "Nintendo Switch",
    "title": "Nintendo DS Lite",
    "url": "https://www.vinted.at/items/10837588098-nintendo-ds-lite"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-17T22:28:34+00:00",
-   "id": "10860529370",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 40.0,
-   "search": "Nintendo Switch",
-   "title": "Farming Simulator 26 2026 Nintendo switch neuf sous blister AB prix ferme",
-   "url": "https://www.vinted.at/items/10860529370-farming-simulator-26-2026-nintendo-switch-neuf-sous-blister-ab-prix-ferme"
   },
   {
    "buyer_protection": true,
@@ -1347,6 +1323,18 @@
    "search": "Nintendo Switch",
    "title": "Nintendo Switch Lite",
    "url": "https://www.vinted.at/items/10836270402-nintendo-switch-lite"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-17T22:28:34+00:00",
+   "id": "10860529370",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 40.0,
+   "search": "Nintendo Switch",
+   "title": "Farming Simulator 26 2026 Nintendo switch neuf sous blister AB prix ferme",
+   "url": "https://www.vinted.at/items/10860529370-farming-simulator-26-2026-nintendo-switch-neuf-sous-blister-ab-prix-ferme"
   }
  ],
  "seen": {
@@ -1762,8 +1750,6 @@
    "10860417485"
   ],
   "vinted:Game Boy": [
-   "10813690171",
-   "10813677557",
    "10813589242",
    "10813611565",
    "10813760350",
@@ -4761,13 +4747,12 @@
    "10862414231",
    "10862417989",
    "10862387544",
-   "10862366550"
+   "10862366550",
+   "10862743193",
+   "10862679148"
   ],
   "vinted:Nintendo Konsolen": [],
   "vinted:Nintendo Switch": [
-   "10774169682",
-   "10774164568",
-   "10774164243",
    "10774105685",
    "10774151662",
    "10774144040",
@@ -7764,7 +7749,10 @@
    "10860618411",
    "10859731232",
    "10862382433",
-   "10859688610"
+   "10859688610",
+   "10862772060",
+   "10858681013",
+   "10858441714"
   ],
   "willhaben:Einhell": [
    "1600611078",
