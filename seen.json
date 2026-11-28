@@ -1170,6 +1170,42 @@
   },
   {
    "buyer_protection": false,
+   "extra": "Ennsdorf",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "1087725474",
+   "paylivery": true,
+   "platform": "willhaben",
+   "price": 14.0,
+   "search": "Einhell",
+   "title": "Neu und unbenutzter elektrischer Schlagschrauber",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/neu-und-unbenutzter-elektrischer-schlagschrauber-1087725474/"
+  },
+  {
+   "buyer_protection": false,
+   "extra": "Bad Tatzmannsdorf",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "1759496393",
+   "paylivery": true,
+   "platform": "willhaben",
+   "price": 39.0,
+   "search": "Einhell",
+   "title": "1 neues Einhell Power X-Change Doppelladegerät Twincharger",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/1-neues-einhell-power-x-change-doppelladegeraet-twincharger-1759496393/"
+  },
+  {
+   "buyer_protection": false,
+   "extra": "St. Valentin",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "2029890585",
+   "paylivery": true,
+   "platform": "willhaben",
+   "price": 20.0,
+   "search": "Einhell",
+   "title": "Einhell Lüfterwalze für GC-SA 1231",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/einhell-luefterwalze-fuer-gc-sa-1231-2029890585/"
+  },
+  {
+   "buyer_protection": false,
    "extra": "Ulmerfeld",
    "found_at": "2026-11-27T23:54:25+00:00",
    "id": "1264550844",
@@ -1542,18 +1578,6 @@
   },
   {
    "buyer_protection": false,
-   "extra": "Oberwart",
-   "found_at": "2026-11-26T09:06:32+00:00",
-   "id": "2070298994",
-   "paylivery": true,
-   "platform": "willhaben",
-   "price": 39.0,
-   "search": "Einhell",
-   "title": "EINHELL POWER X-CHANGE Doppellladegerät Twincharger",
-   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/einhell-power-x-change-doppellladegeraet-twincharger-2070298994/"
-  },
-  {
-   "buyer_protection": false,
    "extra": "Nebelberg",
    "found_at": "2026-11-26T09:06:32+00:00",
    "id": "1230073773",
@@ -1865,28 +1889,52 @@
    "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/einhell-bavaria-bbs-240-schleifmaschine-band-und-scheibenschleifer-2059274360/"
   },
   {
-   "buyer_protection": false,
-   "extra": "Söchau",
-   "found_at": "2026-11-27T18:59:15+00:00",
-   "id": "846793823",
-   "paylivery": true,
-   "platform": "willhaben",
-   "price": 25.0,
-   "search": "Einhell",
-   "title": "Rasentrimmer Einhell",
-   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/rasentrimmer-einhell-846793823/"
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997698344",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 45.0,
+   "search": "Game Boy",
+   "title": "The legend of Zelda",
+   "url": "https://www.vinted.at/items/10997698344-the-legend-of-zelda"
   },
   {
-   "buyer_protection": false,
-   "extra": "Winklarn",
-   "found_at": "2026-11-27T20:58:06+00:00",
-   "id": "2102366902",
-   "paylivery": true,
-   "platform": "willhaben",
-   "price": 20.0,
-   "search": "Einhell",
-   "title": "einhell Multischleifer",
-   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/einhell-multischleifer-2102366902/"
+   "buyer_protection": true,
+   "extra": "Nintendo · Zufriedenstellend",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997676177",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 50.0,
+   "search": "Game Boy",
+   "title": "Gameboy Printer",
+   "url": "https://www.vinted.at/items/10997676177-gameboy-printer"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Neu, ohne Etikett",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997639286",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 55.0,
+   "search": "Game Boy",
+   "title": "Console R36 ultra",
+   "url": "https://www.vinted.at/items/10997639286-console-r36-ultra"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997645710",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 50.0,
+   "search": "Game Boy",
+   "title": "Jeu Pokémon",
+   "url": "https://www.vinted.at/items/10997645710-jeu-pokemon"
   },
   {
    "buyer_protection": true,
@@ -1911,18 +1959,6 @@
    "search": "Game Boy",
    "title": "Adventure time borsetta principessa bitorzolo + trousse zainetto bimo\nCartoon network miniso",
    "url": "https://www.vinted.at/items/10989960689-adventure-time-borsetta-principessa-bitorzolo-trousse-zainetto-bimo-cartoon-network-miniso"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-28T03:57:34+00:00",
-   "id": "10997088495",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 20.0,
-   "search": "Game Boy",
-   "title": "Jeu pokemon",
-   "url": "https://www.vinted.at/items/10997088495-jeu-pokemon"
   },
   {
    "buyer_protection": true,
@@ -1986,15 +2022,15 @@
   },
   {
    "buyer_protection": true,
-   "extra": "pas de marque · Gut",
-   "found_at": "2026-11-28T00:49:32+00:00",
-   "id": "10996331881",
+   "extra": "Sehr gut",
+   "found_at": "2026-11-28T03:57:34+00:00",
+   "id": "10997088495",
    "paylivery": false,
    "platform": "vinted",
-   "price": 25.0,
+   "price": 20.0,
    "search": "Game Boy",
-   "title": "Games boy avec 400 jeux desus",
-   "url": "https://www.vinted.at/items/10996331881-games-boy-avec-400-jeux-desus"
+   "title": "Jeu pokemon",
+   "url": "https://www.vinted.at/items/10997088495-jeu-pokemon"
   },
   {
    "buyer_protection": true,
@@ -2010,6 +2046,18 @@
   },
   {
    "buyer_protection": true,
+   "extra": "pas de marque · Gut",
+   "found_at": "2026-11-28T00:49:32+00:00",
+   "id": "10996331881",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 25.0,
+   "search": "Game Boy",
+   "title": "Games boy avec 400 jeux desus",
+   "url": "https://www.vinted.at/items/10996331881-games-boy-avec-400-jeux-desus"
+  },
+  {
+   "buyer_protection": true,
    "extra": "Gameboy · Gut",
    "found_at": "2026-11-28T03:57:34+00:00",
    "id": "10981868647",
@@ -2019,18 +2067,6 @@
    "search": "Game Boy",
    "title": "Game boy color blu",
    "url": "https://www.vinted.at/items/10981868647-game-boy-color-blu"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10996632476",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 25.5,
-   "search": "Game Boy",
-   "title": "Zelda Minish Cap et Four Swords GBA (gameboy advance)",
-   "url": "https://www.vinted.at/items/10996632476-zelda-minish-cap-et-four-swords-gba-gameboy-advance"
   },
   {
    "buyer_protection": true,
@@ -2046,18 +2082,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Neu, mit Etikett",
-   "found_at": "2026-11-27T22:58:20+00:00",
-   "id": "10995555457",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 49.9,
-   "search": "Game Boy",
-   "title": "🎮 Stick TV Rétro X9 Pro – 30 000 Jeux – 2 Manettes Sans Fil",
-   "url": "https://www.vinted.at/items/10995555457-stick-tv-retro-x9-pro-30-000-jeux-2-manettes-sans-fil"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Gameboy · Neu, mit Etikett",
    "found_at": "2026-11-28T04:55:12+00:00",
    "id": "10983802328",
@@ -2067,6 +2091,42 @@
    "search": "Game Boy",
    "title": "R36s pro originale",
    "url": "https://www.vinted.at/items/10983802328-r36s-pro-originale"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Boy · Neu, mit Etikett",
+   "found_at": "2026-11-28T04:55:12+00:00",
+   "id": "10983319530",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 35.0,
+   "search": "Game Boy",
+   "title": "Blue R36s",
+   "url": "https://www.vinted.at/items/10983319530-blue-r36s"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-28T03:57:34+00:00",
+   "id": "10994605381",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 50.0,
+   "search": "Game Boy",
+   "title": "Game boy macro",
+   "url": "https://www.vinted.at/items/10994605381-game-boy-macro"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Neu, mit Etikett",
+   "found_at": "2026-11-27T22:58:20+00:00",
+   "id": "10995555457",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 49.9,
+   "search": "Game Boy",
+   "title": "🎮 Stick TV Rétro X9 Pro – 30 000 Jeux – 2 Manettes Sans Fil",
+   "url": "https://www.vinted.at/items/10995555457-stick-tv-retro-x9-pro-30-000-jeux-2-manettes-sans-fil"
   },
   {
    "buyer_protection": true,
@@ -2094,42 +2154,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-28T03:57:34+00:00",
-   "id": "10994605381",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 50.0,
-   "search": "Game Boy",
-   "title": "Game boy macro",
-   "url": "https://www.vinted.at/items/10994605381-game-boy-macro"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Boy · Neu, mit Etikett",
-   "found_at": "2026-11-28T04:55:12+00:00",
-   "id": "10983319530",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 35.0,
-   "search": "Game Boy",
-   "title": "Blue R36s",
-   "url": "https://www.vinted.at/items/10983319530-blue-r36s"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Tiger · Sehr gut",
-   "found_at": "2026-11-28T03:57:34+00:00",
-   "id": "10995496443",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 25.0,
-   "search": "Game Boy",
-   "title": "Jeu électronique Tiger Paperboy vintage avec notice",
-   "url": "https://www.vinted.at/items/10995496443-jeu-electronique-tiger-paperboy-vintage-avec-notice"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Neu, mit Etikett",
    "found_at": "2026-11-27T21:58:03+00:00",
    "id": "10994937120",
@@ -2154,39 +2178,99 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10996575214",
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997681943",
    "paylivery": false,
    "platform": "vinted",
-   "price": 25.0,
+   "price": 49.99,
    "search": "Game Boy",
-   "title": "Final Fantasy V et VI GBA pour (gameboy advance)",
-   "url": "https://www.vinted.at/items/10996575214-final-fantasy-v-et-vi-gba-pour-gameboy-advance"
+   "title": "Console nintendo Wii",
+   "url": "https://www.vinted.at/items/10997681943-console-nintendo-wii"
   },
   {
    "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10996565462",
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997648679",
    "paylivery": false,
    "platform": "vinted",
-   "price": 57.0,
+   "price": 35.0,
    "search": "Game Boy",
-   "title": "Lot de 5 jeux Final Fantasy GBA pour (gameboy advance)",
-   "url": "https://www.vinted.at/items/10996565462-lot-de-5-jeux-final-fantasy-gba-pour-gameboy-advance"
+   "title": "Nintendo Wii Nunchuk cavo alimentazione libretti",
+   "url": "https://www.vinted.at/items/10997648679-nintendo-wii-nunchuk-cavo-alimentazione-libretti"
   },
   {
    "buyer_protection": true,
    "extra": "Nintendo · Gut",
-   "found_at": "2026-11-28T05:49:57+00:00",
-   "id": "10997472426",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997648463",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 35.0,
+   "search": "Game Boy",
+   "title": "Nintendo Ds + 4 giochi",
+   "url": "https://www.vinted.at/items/10997648463-nintendo-ds-4-giochi"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997654949",
    "paylivery": false,
    "platform": "vinted",
    "price": 25.0,
    "search": "Game Boy",
-   "title": "Console wii plus accessoires",
-   "url": "https://www.vinted.at/items/10997472426-console-wii-plus-accessoires"
+   "title": "Nintendo",
+   "url": "https://www.vinted.at/items/10997654949-nintendo"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997647501",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 40.0,
+   "search": "Game Boy",
+   "title": "Controller pro Switch und fc 24 Nintendo Spiel",
+   "url": "https://www.vinted.at/items/10997647501-controller-pro-switch-und-fc-24-nintendo-spiel"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Neu, ohne Etikett",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997626963",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 30.0,
+   "search": "Game Boy",
+   "title": "Volant switch /switch 2",
+   "url": "https://www.vinted.at/items/10997626963-volant-switch-switch-2"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997623645",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 49.0,
+   "search": "Game Boy",
+   "title": "Paire de Joy-Con Nintendo Switch officiels – Rouge Néon / Bleu Néon",
+   "url": "https://www.vinted.at/items/10997623645-paire-de-joy-con-nintendo-switch-officiels-rouge-neon-bleu-neon"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Neu, mit Etikett",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997569151",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 20.0,
+   "search": "Game Boy",
+   "title": "Controller Wireless MacroGlow RGB",
+   "url": "https://www.vinted.at/items/10997569151-controller-wireless-macroglow-rgb"
   },
   {
    "buyer_protection": true,
@@ -2322,90 +2406,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-28T00:49:32+00:00",
-   "id": "10996223455",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 59.99,
-   "search": "Game Boy",
-   "title": "Nintendo dSI XL",
-   "url": "https://www.vinted.at/items/10996223455-nintendo-dsi-xl"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Zufriedenstellend",
-   "found_at": "2026-11-28T00:49:32+00:00",
-   "id": "10940072805",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 59.99,
-   "search": "Game Boy",
-   "title": "Nintendo Switch Lite turquoise #594",
-   "url": "https://www.vinted.at/items/10940072805-nintendo-switch-lite-turquoise-594"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Neu, mit Etikett",
-   "found_at": "2026-11-28T00:49:32+00:00",
-   "id": "10996161053",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 33.0,
-   "search": "Game Boy",
-   "title": "Console Retro Gaming Nintendo NES",
-   "url": "https://www.vinted.at/items/10996161053-console-retro-gaming-nintendo-nes"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-27T23:54:25+00:00",
-   "id": "10939985203",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 34.99,
-   "search": "Game Boy",
-   "title": "Nintendo DS Lite rose #474",
-   "url": "https://www.vinted.at/items/10939985203-nintendo-ds-lite-rose-474"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-27T23:54:25+00:00",
-   "id": "10939879546",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 34.99,
-   "search": "Game Boy",
-   "title": "Nintendo DSi noire #473",
-   "url": "https://www.vinted.at/items/10939879546-nintendo-dsi-noire-473"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-27T23:54:25+00:00",
-   "id": "10939852689",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 34.99,
-   "search": "Game Boy",
-   "title": "Nintendo DS Lite argent #499",
-   "url": "https://www.vinted.at/items/10939852689-nintendo-ds-lite-argent-499"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Zufriedenstellend",
-   "found_at": "2026-11-28T02:58:06+00:00",
-   "id": "10939996296",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 29.99,
-   "search": "Game Boy",
-   "title": "Nintendo DS Lite blanche avec housse #554",
-   "url": "https://www.vinted.at/items/10939996296-nintendo-ds-lite-blanche-avec-housse-554"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Gut",
    "found_at": "2026-11-27T23:54:25+00:00",
    "id": "10995936768",
@@ -2418,42 +2418,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-28T02:58:06+00:00",
-   "id": "10995831665",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 44.99,
-   "search": "Game Boy",
-   "title": "Lot console wii + accessoires + 4 jeux dont 3 sous blister",
-   "url": "https://www.vinted.at/items/10995831665-lot-console-wii-accessoires-4-jeux-dont-3-sous-blister"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-28T04:55:12+00:00",
-   "id": "10995817552",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 50.0,
-   "search": "Game Boy",
-   "title": "Console",
-   "url": "https://www.vinted.at/items/10995817552-console"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10996595475",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 25.5,
-   "search": "Game Boy",
-   "title": "Boîte Pokémon Saphir et Rubis Réimprimer GBA FR (gameboyadvance)",
-   "url": "https://www.vinted.at/items/10996595475-boite-pokemon-saphir-et-rubis-reimprimer-gba-fr-gameboyadvance"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Neu, mit Etikett",
    "found_at": "2026-11-28T02:58:06+00:00",
    "id": "10994562651",
@@ -2463,30 +2427,6 @@
    "search": "Game Boy",
    "title": "🎮 Console Rétro Gaming Portable SF3500 – POKIVA",
    "url": "https://www.vinted.at/items/10994562651-console-retro-gaming-portable-sf3500-pokiva"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10996484500",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 38.0,
-   "search": "Game Boy",
-   "title": "Boîte Pokémon Saphir / Rubis / Émeraude Réimprimer GBA FR (gameboyadvance)",
-   "url": "https://www.vinted.at/items/10996484500-boite-pokemon-saphir-rubis-emeraude-reimprimer-gba-fr-gameboyadvance"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10996488909",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 25.5,
-   "search": "Game Boy",
-   "title": "Boîte Pokémon Rouge Feu et Vert Feuille Réimprimer GBA FR (gameboyadvance)",
-   "url": "https://www.vinted.at/items/10996488909-boite-pokemon-rouge-feu-et-vert-feuille-reimprimer-gba-fr-gameboyadvance"
   },
   {
    "buyer_protection": true,
@@ -2503,14 +2443,14 @@
   {
    "buyer_protection": true,
    "extra": "Sehr gut",
-   "found_at": "2026-11-28T00:49:32+00:00",
-   "id": "10996367612",
+   "found_at": "2026-11-28T02:07:29+00:00",
+   "id": "10996632476",
    "paylivery": false,
    "platform": "vinted",
-   "price": 60.0,
+   "price": 25.5,
    "search": "Game Boy",
-   "title": "Lot des 5 boîtes Pokémon GBA Réimprimer FR (gameboyadvance)",
-   "url": "https://www.vinted.at/items/10996367612-lot-des-5-boites-pokemon-gba-reimprimer-fr-gameboyadvance"
+   "title": "Zelda Minish Cap et Four Swords GBA (gameboy advance)",
+   "url": "https://www.vinted.at/items/10996632476-zelda-minish-cap-et-four-swords-gba-gameboy-advance"
   },
   {
    "buyer_protection": true,
@@ -2523,6 +2463,42 @@
    "search": "Game Boy",
    "title": "Nitendo DS Lite Noire",
    "url": "https://www.vinted.at/items/10730683872-nitendo-ds-lite-noire"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-28T02:07:29+00:00",
+   "id": "10996595475",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 25.5,
+   "search": "Game Boy",
+   "title": "Boîte Pokémon Saphir et Rubis Réimprimer GBA FR (gameboyadvance)",
+   "url": "https://www.vinted.at/items/10996595475-boite-pokemon-saphir-et-rubis-reimprimer-gba-fr-gameboyadvance"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-28T02:07:29+00:00",
+   "id": "10996575214",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 25.0,
+   "search": "Game Boy",
+   "title": "Final Fantasy V et VI GBA pour (gameboy advance)",
+   "url": "https://www.vinted.at/items/10996575214-final-fantasy-v-et-vi-gba-pour-gameboy-advance"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-28T02:07:29+00:00",
+   "id": "10996565462",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 57.0,
+   "search": "Game Boy",
+   "title": "Lot de 5 jeux Final Fantasy GBA pour (gameboy advance)",
+   "url": "https://www.vinted.at/items/10996565462-lot-de-5-jeux-final-fantasy-gba-pour-gameboy-advance"
   },
   {
    "buyer_protection": true,
@@ -2562,6 +2538,30 @@
   },
   {
    "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-28T02:07:29+00:00",
+   "id": "10996484500",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 38.0,
+   "search": "Game Boy",
+   "title": "Boîte Pokémon Saphir / Rubis / Émeraude Réimprimer GBA FR (gameboyadvance)",
+   "url": "https://www.vinted.at/items/10996484500-boite-pokemon-saphir-rubis-emeraude-reimprimer-gba-fr-gameboyadvance"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-28T02:07:29+00:00",
+   "id": "10996488909",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 25.5,
+   "search": "Game Boy",
+   "title": "Boîte Pokémon Rouge Feu et Vert Feuille Réimprimer GBA FR (gameboyadvance)",
+   "url": "https://www.vinted.at/items/10996488909-boite-pokemon-rouge-feu-et-vert-feuille-reimprimer-gba-fr-gameboyadvance"
+  },
+  {
+   "buyer_protection": true,
    "extra": "Anbernic · Gut",
    "found_at": "2026-11-28T05:49:57+00:00",
    "id": "10991283713",
@@ -2571,18 +2571,6 @@
    "search": "Game Boy",
    "title": "Handheld Anbernic RG351P Retro Spielekonsole",
    "url": "https://www.vinted.at/items/10991283713-handheld-anbernic-rg351p-retro-spielekonsole"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-28T00:49:32+00:00",
-   "id": "10996176175",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 25.4,
-   "search": "Game Boy",
-   "title": "Pokemon Rubis et Saphir GBA FR (gameboy advance)",
-   "url": "https://www.vinted.at/items/10996176175-pokemon-rubis-et-saphir-gba-fr-gameboy-advance"
   },
   {
    "buyer_protection": true,
@@ -2598,15 +2586,39 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Sehr gut",
-   "found_at": "2026-11-28T00:49:32+00:00",
-   "id": "10996217056",
+   "extra": "Nintendo · Gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10989471152",
    "paylivery": false,
    "platform": "vinted",
-   "price": 23.0,
+   "price": 24.99,
    "search": "Game Boy",
-   "title": "The Legend of Spyro: The Eternal Night per Game Boy Advance (GBA) + Manuale",
-   "url": "https://www.vinted.at/items/10996217056-the-legend-of-spyro-the-eternal-night-per-game-boy-advance-gba-manuale"
+   "title": "Nintendo DS Fat Light Blue Funzionante ma Cerniera Destra Rotta",
+   "url": "https://www.vinted.at/items/10989471152-nintendo-ds-fat-light-blue-funzionante-ma-cerniera-destra-rotta"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Sehr gut",
+   "found_at": "2026-11-28T00:49:32+00:00",
+   "id": "10996367612",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 60.0,
+   "search": "Game Boy",
+   "title": "Lot des 5 boîtes Pokémon GBA Réimprimer FR (gameboyadvance)",
+   "url": "https://www.vinted.at/items/10996367612-lot-des-5-boites-pokemon-gba-reimprimer-fr-gameboyadvance"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10988291555",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 55.0,
+   "search": "Game Boy",
+   "title": "Nintendo DS Lite Schwarz inkl. 7 Spiele, Tasche & Multi-Ladekabel",
+   "url": "https://www.vinted.at/items/10988291555-nintendo-ds-lite-schwarz-inkl-7-spiele-tasche-multi-ladekabel"
   },
   {
    "buyer_protection": true,
@@ -2619,6 +2631,66 @@
    "search": "Game Boy",
    "title": "Advance moisturiser Rituals",
    "url": "https://www.vinted.at/items/10990044185-advance-moisturiser-rituals"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Advance · EU 38 · Sehr gut",
+   "found_at": "2026-11-28T05:49:57+00:00",
+   "id": "10987317527",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 20.0,
+   "search": "Game Boy",
+   "title": "Maglione nero in lana d’agnello e angora, vintage  anni '90",
+   "url": "https://www.vinted.at/items/10987317527-maglione-nero-in-lana-dagnello-e-angora-vintage-anni-90"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Advance · Sehr gut",
+   "found_at": "2026-11-28T05:49:57+00:00",
+   "id": "10987294604",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 44.0,
+   "search": "Game Boy",
+   "title": "Porta pc",
+   "url": "https://www.vinted.at/items/10987294604-porta-pc"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Advance · Sehr gut",
+   "found_at": "2026-11-28T05:49:57+00:00",
+   "id": "10987203047",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 22.0,
+   "search": "Game Boy",
+   "title": "Sciarpa / Stola / Foulard rettangolare",
+   "url": "https://www.vinted.at/items/10987203047-sciarpa-stola-foulard-rettangolare"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Retrogaming · Sehr gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10993953927",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 58.0,
+   "search": "Game Boy",
+   "title": "Mini PC Retrogaming - Intel Celeron/ 4go ram / 128go SSD - Cadeau idéal",
+   "url": "https://www.vinted.at/items/10993953927-mini-pc-retrogaming-intel-celeron-4go-ram-128go-ssd-cadeau-ideal"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Retrogaming · Sehr gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10993917148",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 58.0,
+   "search": "Game Boy",
+   "title": "Mini PC Retrogaming - Intel Celeron / 4go ram / 128go SSD",
+   "url": "https://www.vinted.at/items/10993917148-mini-pc-retrogaming-intel-celeron-4go-ram-128go-ssd"
   },
   {
    "buyer_protection": true,
@@ -2643,6 +2715,18 @@
    "search": "Game Boy",
    "title": "Hoodie Monster Energy Blue emo grunge alt alternative punk",
    "url": "https://www.vinted.at/items/10995466817-hoodie-monster-energy-blue-emo-grunge-alt-alternative-punk"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Neu, mit Etikett",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10993051438",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 25.0,
+   "search": "Game Boy",
+   "title": "Lotto Accessori Nintendo Wii e DS / 3DS Nuovi in Scatola Joypad Cavo Scart Caricatori",
+   "url": "https://www.vinted.at/items/10993051438-lotto-accessori-nintendo-wii-e-ds-3ds-nuovi-in-scatola-joypad-cavo-scart-caricatori"
   },
   {
    "buyer_protection": true,
@@ -2694,111 +2778,15 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Advance · EU 38 · Sehr gut",
-   "found_at": "2026-11-28T05:49:57+00:00",
-   "id": "10987317527",
+   "extra": "Nintendo · Zufriedenstellend",
+   "found_at": "2026-11-28T00:49:32+00:00",
+   "id": "10940072805",
    "paylivery": false,
    "platform": "vinted",
-   "price": 20.0,
-   "search": "Game Boy",
-   "title": "Maglione nero in lana d’agnello e angora, vintage  anni '90",
-   "url": "https://www.vinted.at/items/10987317527-maglione-nero-in-lana-dagnello-e-angora-vintage-anni-90"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Advance · Sehr gut",
-   "found_at": "2026-11-28T05:49:57+00:00",
-   "id": "10987294604",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 44.0,
-   "search": "Game Boy",
-   "title": "Porta pc",
-   "url": "https://www.vinted.at/items/10987294604-porta-pc"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "SWAG · XL · Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10995635585",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 39.99,
-   "search": "Game Boy",
-   "title": "Hoodie my melody hello kitty green meme emo grunge alt alternative punk",
-   "url": "https://www.vinted.at/items/10995635585-hoodie-my-melody-hello-kitty-green-meme-emo-grunge-alt-alternative-punk"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Advance · Sehr gut",
-   "found_at": "2026-11-28T05:49:57+00:00",
-   "id": "10987203047",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 22.0,
-   "search": "Game Boy",
-   "title": "Sciarpa / Stola / Foulard rettangolare",
-   "url": "https://www.vinted.at/items/10987203047-sciarpa-stola-foulard-rettangolare"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Japan Style · XL · Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10995660811",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 39.99,
-   "search": "Game Boy",
-   "title": "Hoodie my melody hello kitty xan meme emo grunge alt alternative punk",
-   "url": "https://www.vinted.at/items/10995660811-hoodie-my-melody-hello-kitty-xan-meme-emo-grunge-alt-alternative-punk"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Japan Style · XL · Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10995688155",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 39.99,
-   "search": "Game Boy",
-   "title": "Hoodie my melody love lil peep meme emo grunge alt alternative punk",
-   "url": "https://www.vinted.at/items/10995688155-hoodie-my-melody-love-lil-peep-meme-emo-grunge-alt-alternative-punk"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "SWAG · XL · Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10995706097",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 39.99,
-   "search": "Game Boy",
-   "title": "Hoodie my melody love nerds emo grunge alt alternative punk",
-   "url": "https://www.vinted.at/items/10995706097-hoodie-my-melody-love-nerds-emo-grunge-alt-alternative-punk"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Alternative · XL · Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10995724959",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 39.99,
-   "search": "Game Boy",
-   "title": "Hoodie my melody monster hello kitty emo grunge alt alternative punk",
-   "url": "https://www.vinted.at/items/10995724959-hoodie-my-melody-monster-hello-kitty-emo-grunge-alt-alternative-punk"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Jacques Mesrine · Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10996432547",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 30.0,
-   "search": "Game Boy",
-   "title": "Prop Fiche de recherche Jacques Mesrine",
-   "url": "https://www.vinted.at/items/10996432547-prop-fiche-de-recherche-jacques-mesrine"
+   "price": 59.99,
+   "search": "Nintendo Switch",
+   "title": "Nintendo Switch Lite turquoise #594",
+   "url": "https://www.vinted.at/items/10940072805-nintendo-switch-lite-turquoise-594"
   },
   {
    "buyer_protection": true,
@@ -2862,30 +2850,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Nintendo · Sehr gut",
-   "found_at": "2026-11-28T02:07:29+00:00",
-   "id": "10996438955",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 40.0,
-   "search": "Nintendo Switch",
-   "title": "Accessoires Nintendo switch Lite",
-   "url": "https://www.vinted.at/items/10996438955-accessoires-nintendo-switch-lite"
-  },
-  {
-   "buyer_protection": true,
-   "extra": "Nintendo · Gut",
-   "found_at": "2026-11-27T20:00:05+00:00",
-   "id": "10977326436",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 74.99,
-   "search": "Nintendo Switch",
-   "title": "Nintendo Switch Lite jaune sans boîte #707",
-   "url": "https://www.vinted.at/items/10977326436-nintendo-switch-lite-jaune-sans-boite-707"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Nintendo · Gut",
    "found_at": "2026-11-27T17:10:11+00:00",
    "id": "10991025731",
@@ -2919,6 +2883,18 @@
    "search": "Nintendo Switch",
    "title": "Nintendo Switch Lite colore grigio usata senza caricabatterie",
    "url": "https://www.vinted.at/items/10989242311-nintendo-switch-lite-colore-grigio-usata-senza-caricabatterie"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-28T02:07:29+00:00",
+   "id": "10996438955",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 40.0,
+   "search": "Nintendo Switch",
+   "title": "Accessoires Nintendo switch Lite",
+   "url": "https://www.vinted.at/items/10996438955-accessoires-nintendo-switch-lite"
   },
   {
    "buyer_protection": true,
@@ -2982,6 +2958,30 @@
   },
   {
    "buyer_protection": true,
+   "extra": "Nintendo · Sehr gut",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10982629634",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 70.0,
+   "search": "Nintendo Switch",
+   "title": "Switch Lite",
+   "url": "https://www.vinted.at/items/10982629634-switch-lite"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Einhell · Neu, mit Etikett",
+   "found_at": "2026-11-28T06:50:33+00:00",
+   "id": "10997664408",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 12.0,
+   "search": "Einhell",
+   "title": "Einhell Werkzeug",
+   "url": "https://www.vinted.at/items/10997664408-einhell-werkzeug"
+  },
+  {
+   "buyer_protection": true,
    "extra": "Einhell · Neu, mit Etikett",
    "found_at": "2026-11-27T18:59:15+00:00",
    "id": "10992625036",
@@ -3018,18 +3018,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Einhell · Neu, mit Etikett",
-   "found_at": "2026-11-27T23:54:25+00:00",
-   "id": "10995857580",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 35.0,
-   "search": "Einhell",
-   "title": "Kit starter Einhell",
-   "url": "https://www.vinted.at/items/10995857580-kit-starter-einhell"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Einhell · Neu, ohne Etikett",
    "found_at": "2026-11-27T14:57:43+00:00",
    "id": "10989873620",
@@ -3043,14 +3031,14 @@
   {
    "buyer_protection": true,
    "extra": "Einhell · Neu, mit Etikett",
-   "found_at": "2026-11-27T21:58:03+00:00",
-   "id": "10995021521",
+   "found_at": "2026-11-27T23:54:25+00:00",
+   "id": "10995857580",
    "paylivery": false,
    "platform": "vinted",
-   "price": 12.0,
+   "price": 35.0,
    "search": "Einhell",
-   "title": "Einhell Werkzeug",
-   "url": "https://www.vinted.at/items/10995021521-einhell-werkzeug"
+   "title": "Kit starter Einhell",
+   "url": "https://www.vinted.at/items/10995857580-kit-starter-einhell"
   },
   {
    "buyer_protection": true,
@@ -3066,18 +3054,6 @@
   },
   {
    "buyer_protection": true,
-   "extra": "Einhell · Neu, ohne Etikett",
-   "found_at": "2026-11-27T20:58:06+00:00",
-   "id": "10994176035",
-   "paylivery": false,
-   "platform": "vinted",
-   "price": 29.0,
-   "search": "Einhell",
-   "title": "Caricabatterie auto Einhell 12V - Completo di scatola originale",
-   "url": "https://www.vinted.at/items/10994176035-caricabatterie-auto-einhell-12v-completo-di-scatola-originale"
-  },
-  {
-   "buyer_protection": true,
    "extra": "Einhell · Neu, mit Etikett",
    "found_at": "2026-11-27T10:37:51+00:00",
    "id": "10987447060",
@@ -3087,6 +3063,18 @@
    "search": "Einhell",
    "title": "Ponceuse triangulaire neuve",
    "url": "https://www.vinted.at/items/10987447060-ponceuse-triangulaire-neuve"
+  },
+  {
+   "buyer_protection": true,
+   "extra": "Einhell · Neu, ohne Etikett",
+   "found_at": "2026-11-27T20:58:06+00:00",
+   "id": "10994176035",
+   "paylivery": false,
+   "platform": "vinted",
+   "price": 29.0,
+   "search": "Einhell",
+   "title": "Caricabatterie auto Einhell 12V - Completo di scatola originale",
+   "url": "https://www.vinted.at/items/10994176035-caricabatterie-auto-einhell-12v-completo-di-scatola-originale"
   },
   {
    "buyer_protection": true,
@@ -4165,22 +4153,10 @@
    "10995021521",
    "10994898165",
    "10995857580",
-   "10995841127"
+   "10995841127",
+   "10997664408"
   ],
   "vinted:Game Boy": [
-   "10955931122",
-   "10955933652",
-   "10955900105",
-   "10955705217",
-   "10955781186",
-   "10955641156",
-   "10955689337",
-   "10955606289",
-   "10955556524",
-   "10956994720",
-   "10956990754",
-   "10956995102",
-   "10956953859",
    "10956866202",
    "10956895477",
    "10956890927",
@@ -7167,23 +7143,23 @@
    "10997444157",
    "10995721445",
    "10997426932",
-   "10990044185"
+   "10990044185",
+   "10997698344",
+   "10997676177",
+   "10997639286",
+   "10997645710",
+   "10997681943",
+   "10997648679",
+   "10997648463",
+   "10997654949",
+   "10997647501",
+   "10997626963",
+   "10997623645",
+   "10997569151",
+   "10988291555"
   ],
   "vinted:Nintendo Konsolen": [],
   "vinted:Nintendo Switch": [
-   "10914468775",
-   "10914348776",
-   "10914450907",
-   "10914449587",
-   "10914442171",
-   "10914436575",
-   "10914417372",
-   "10914414060",
-   "10914392336",
-   "10914381237",
-   "10914383516",
-   "10914358030",
-   "10914348074",
    "10914215544",
    "10914115927",
    "10914199666",
@@ -10170,7 +10146,20 @@
    "10994869897",
    "10993666007",
    "10994032165",
-   "10983782085"
+   "10983782085",
+   "10997700293",
+   "10997647501",
+   "10997574121",
+   "10997626963",
+   "10997623645",
+   "10997638431",
+   "10997532269",
+   "10997589006",
+   "10997585288",
+   "10997577027",
+   "10997558132",
+   "10997558403",
+   "10997543291"
   ],
   "willhaben:Einhell": [
    "1600611078",
@@ -10713,7 +10702,10 @@
    "793754051",
    "1809205455",
    "2028092084",
-   "1264550844"
+   "1264550844",
+   "1087725474",
+   "1759496393",
+   "2029890585"
   ],
   "willhaben:Game Boy": [
    "1922559368",
@@ -12114,7 +12106,8 @@
    "1779034600",
    "1979156439",
    "1572802292",
-   "1058029045"
+   "1058029045",
+   "1269978357"
   ],
   "willhaben:Pokemon Karten": [
    "1485903807",
